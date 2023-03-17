@@ -58,6 +58,111 @@
 @import url("../css/slick.css");
 @import url("../css/animate.css");
 
+.ant-tabs-nav-wrap {
+   margin-bottom: -1px;
+   overflow: hidden
+}
+
+.ant-tabs-nav-scroll {
+   overflow: hidden;
+   white-space: nowrap;
+}
+
+.ant-tabs-nav {
+   position: relative;
+   display: inline-block;
+   box-sizing: border-box;
+   margin: 0;
+   padding-left: 0;
+   list-style: none;
+   transition: transform .3s cubic-bezier(.645, .045, .355, 1);
+}
+
+.ant-tabs-nav .ant-tabs-tab {
+   position: relative;
+   display: inline-block;
+   box-sizing: border-box;
+   height: 100%;
+   margin: 0 32px 0 0;
+   padding: 12px 16px;
+   text-decoration: none;
+   cursor: pointer;
+   transition: color .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.ant-tabs-nav .ant-tabs-tab:last-child {
+   margin-right: 0;
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+   color: #0080cc;
+   font-weight: 500;
+}
+.ant-tabs-nav .ant-tabs-tab {
+   position: relative;
+   display: inline-block;
+   box-sizing: border-box;
+   height: 100%;
+   margin: 0 32px 0 0;
+   padding: 12px 16px;
+   text-decoration: none;
+   cursor: pointer;
+   transition: color .3s cubic-bezier(.645,.045,.355,1);
+}
+*, :after, :before {
+   box-sizing: border-box;
+}
+用户代理样式表
+div {
+   display: block;
+}
+.ant-tabs-nav {
+   position: relative;
+   display: inline-block;
+   box-sizing: border-box;
+   margin: 0;
+   padding-left: 0;
+   list-style: none;
+   transition: transform .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.ant-tabs-nav-scroll {
+   overflow: hidden;
+   white-space: nowrap;
+}
+
+.tabs-active1-style {
+   display: block;
+   transform: translate3d(0px, 0px, 0px);
+   width: 96px !important;
+}
+
+.tabs-active2-style {
+   display: block;
+   transform: translate3d(144px, 0px, 0px);
+   width: 96px !important;
+}
+.tabs-active3-style {
+   display: block;
+   transform: translate3d(288px, 0px, 0px);
+   width: 96px !important;
+}
+
+.ant-tabs-ink-bar-animated {
+   transition: transform .3s cubic-bezier(.645,.045,.355,1),width .2s cubic-bezier(.645,.045,.355,1),left .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.ant-tabs-ink-bar {
+   position: absolute;
+   bottom: 1px;
+   left: 0;
+   z-index: 1;
+   box-sizing: border-box;
+   width: 0;
+   height: 2px;
+   background-color: #0080cc;
+   transform-origin: 0 0;
+}
+
 
 .btn-amazing {
   color: #24182e;
@@ -180,7 +285,7 @@ iframe, embed, object {max-width: 100%;}
 
 h1, h2, h3, h4, h5, h6 {color: #24182e;margin: 20px 0 10px 0;font-style: normal;font-family: 'Montserrat', sans-serif;}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {line-height: 1.2em;}
-h1 { font-size: 56px;}
+h1 { font-size: 47px;}
 h2 { font-size: 36px;}
 h3 { font-size: 24px;}
 h4 { font-size: 18px;}
@@ -561,7 +666,7 @@ input.search-bar-top:-moz-placeholder { color: #fff!important; }
 .font-16px {font-size: 16px!important;}
 .font-18px {font-size: 18px;}
 .font-20px {font-size: 20px!important;}
-.font-26px {font-size: 26px;}
+. font-20px {font-size: 26px;}
 .font-30px {font-size: 30px;}
 .font-35px {font-size: 35px;}
 .font-40px {font-size: 40px;}
@@ -668,7 +773,7 @@ input.search-bar-top:-moz-placeholder { color: #fff!important; }
 .mt-20 {margin-top: 20px!important;}
 .mt-30 {margin-top: 30px;}
 .mt-40 {margin-top: 40px;}
-.mt-50 {margin-top: 50px!important;}
+.mt-30 {margin-top: 50px!important;}
 .mt-60 {margin-top: 60px;}
 .mt-70 {margin-top: 70px;}
 .mt-80 {margin-top: 80px;}
@@ -1298,7 +1403,7 @@ img.mfp-img{padding:40px 0px 0;}
 .portfolio-slider{margin-bottom:30px;}
 .portfolio-slider .slick-dots{position:absolute;bottom:25px;}
 .portfolio-right .project-detail-box{margin-top:10px;}
-.portfolio-right .project-detail-box.mt-50{margin-top:50px;}
+.portfolio-right .project-detail-box.mt-30{margin-top:50px;}
 .portfolio-right .project-detail-box li strong{min-width:110px;display:inline-block;}
 .portfolio-right .project-detail-box li strong.display-block{display:block;}
 .portfolio-right .project-detail-box li{line-height:30px;list-style:none;}
