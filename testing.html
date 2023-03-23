@@ -95,8 +95,8 @@
 
   
   <!-- Main title start-->
-  <section class="parallax-bg fixed-bg xs-pt-40 xs-pb-40 height-110px" data-parallax-bg-image="assets/images/background/lightbulb.jpg" data-parallax-speed="0.5" data-parallax-direction="up">
-    <div class="overlay-bg"></div>
+  <section class="parallax-bg fixed-bg xs-pt-40 xs-pb-40 height-110px" data-parallax-bg-image="assets/images/background/earth-bg.jpg"  data-parallax-speed="0.5" data-parallax-direction="up">
+    
     <div class="container">
       <div class="row">
         <div class="col-md-10 text-left parallax-content height-100px centerize-col">
@@ -114,38 +114,323 @@
   <!--=== BG Start ======-->
   <section class="lg-section white-bg all-padding-70" id="about">
 
-    <div class="container-fluid">
-      <div class="col-md-8 col-sm-7 col-md-offset-2 col-sm-offset-3 ">
+    <div class="container">
+      <div class=WordSection1>
 
-        <h2 class="">Project background and partner introduction </h2>
-        <div class="font-400 font-20px all-padding-30">
-        <p>
-
-          The need for assistive robotics for people with disabilities has become increasingly apparent in recent years. According to the World Health Organization, around 15% of the world's population lives with some form of disability, and many of these individuals struggle with daily tasks that many of us take for granted. 
-          
-        </p> 
-        <p> 
-          
-          People like Henry Evans, who have severe physical disabilities, often require the assistance of caregivers or technology to complete even basic tasks such as scratching an itch. This can be both inconvenient and uncomfortable for the individual, as well as a burden on caregivers who may not always be available to provide assistance. 
-          
-        </p> 
-        <p>     
-          
-          The development of assistive robotics has the potential to significantly improve the quality of life for people with disabilities by providing them with greater independence and the ability to complete tasks on their own. In this project, we aim to take the first step towards this goal by creating a system that can automatically detect when a person has an itch on their face and alert them or a caregiver so that the itch can be addressed. 
-          
-        </p> 
-        <p>    
-          
-          We will be using a stretch RE1 robot as a platform for this project, but the focus of the project is on the development of the AI system that will enable the robot to identify and respond to itches. By using machine learning algorithms and data collected from people with disabilities, we hope to create a system that is both accurate and reliable. We believe that this project has the potential to make a meaningful impact on the lives of people with disabilities and pave the way for further development of assistive robotics technology. 
-          
-        </p> 
-        <p>    
-          
-          As our industrial project partner, Avanade is a global professional services company that provides consulting, technology, and managed services to help organizations unlock the full potential of their digital investments. Founded in 2000 as a joint venture between Microsoft and Accenture, Avanade has a unique blend of technical expertise and business acumen that enables them to deliver innovative solutions for their clients. With a team of over 30,000 professionals in more than 25 countries, they are well-equipped to handle projects of any size and complexity. They services cover a wide range of technologies, including cloud, data analytics, digital experience, and cybersecurity. They pride themselves on their ability to help their clients drive measurable business results and achieve their goals through the effective use of technology. 
-          
-        </p> 
-      </div>
-      </div>
+        <h1><span lang=EN-US>Testing Strategy</span></h1>
+        
+        <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>As this project’s primary focus was on the
+        itch detection algorithm, the majority of the testing was directed towards ensuring
+        it’s functionality. Consequently, we did not divert any resources to setting up
+        a test strategy (although still informally tested) for both the python and HTML
+        webcam capture and display systems. Their purpose are for visualizing the
+        algorithm for debugging, testing, and gathering feedback, but not are not core proponent
+        to the algorithm and end deliverable. </span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>To cover all relevant aspects of the
+        algorithm we’ve conducted 3 different types of testing: unit testing
+        integration testing, and user acceptance testing. </span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>The unit testing was the first line of
+        testing that was setup during development to ensure that each function created
+        was operating as intended and returned the desired results. The unit testing
+        focused on testing the ItchDetection and FaceData classes as those were the
+        main bulk of the complex logic and the sole proponents to the itch detection
+        algorithm, which’s the primary deliverable.</span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>The integration testing was dedicated to
+        black box testing, ensuring that given a certain input, the output of the itch
+        detection algorithm would consistently return the expected result. A large number
+        of images were given to both measure an accuracy value of the algorithm and
+        also to measure performance of the algorithm, as for higher quality images
+        processing time can get very high. </span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>Finally, we conducted user acceptance
+        testing to gather feedback from users. As the result is an AI, UI design and
+        user flow is not something we’re focused on, rather we will be mainly focusing
+        on how accurate the detection feels to the user, and how unaccommodating the constraints
+        may feel to the user (lighting, face positioning, minimal movement). </span></p>
+        
+        <h1><span lang=EN-US>Unit Testing</span></h1>
+        
+        <p class=MsoNormal><span lang=EN-US>To perform unit tests we used the built in
+        python unit test library as it was sufficient for doing the necessary tests.
+        Unit testing was run on both the ItchDetection and FaceData classes, by
+        inputting certain data and checking if the output matches, note that if the
+        output was a float the equality was tested to 8 decimal places due to the
+        existence of floating point errors.</span></p>
+        
+        <h2><span lang=EN-US>Generating Test data</span></h2>
+        
+        <p class=MsoNormal><span lang=EN-US>As running most functions depended on a
+        class FaceData object being initialized first, there was a need to generate
+        face landmarks data. Given that calculations such as center points and offsets
+        needed to be calculated externally to guarantee the authenticity of the unit
+        tests, and the large number of points (72 points) associated with each set of
+        face landmarks, we needed to make a few optimizations to generating the test
+        data to ensure that we did not spend half our time on generating test data.</span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>The first optimization was to reduce the
+        amount of coordinates for each landmark. Given the design of the code, this
+        change would not have any effect on the result. However, to make sure that the
+        calculations such as mean and standard deviation are properly tested, we cannot
+        have too few points either, therefore we constrained ourself to using no less
+        than 3 points to represent most of the landmarks. </span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>The second optimization was to create
+        functions to customize the data and the expected results. We made two functions,
+        one to modify the landmarks by scaling and/or applying an offset, and one to
+        modify the expected the data for expected outputs. The code below just
+        traverses the dictionary of data and modifies them with a given offset (only if
+        it is a coordinate) and multiplies it with a given scalar.</span></p>
+        
+        <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+         id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+         path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+         <v:stroke joinstyle="miter"/>
+         <v:formulas>
+          <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+          <v:f eqn="sum @0 1 0"/>
+          <v:f eqn="sum 0 0 @1"/>
+          <v:f eqn="prod @2 1 2"/>
+          <v:f eqn="prod @3 21600 pixelWidth"/>
+          <v:f eqn="prod @3 21600 pixelHeight"/>
+          <v:f eqn="sum @0 0 1"/>
+          <v:f eqn="prod @6 1 2"/>
+          <v:f eqn="prod @7 21600 pixelWidth"/>
+          <v:f eqn="sum @8 21600 0"/>
+          <v:f eqn="prod @7 21600 pixelHeight"/>
+          <v:f eqn="sum @10 21600 0"/>
+         </v:formulas>
+         <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+         <o:lock v:ext="edit" aspectratio="t"/>
+        </v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1032" type="#_x0000_t75"
+         alt="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"
+         style='width:468pt;height:189.75pt;visibility:visible;mso-wrap-style:square'>
+         <v:imagedata src="testing_files/image001.png" o:title="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"/>
+        </v:shape><![endif]--><![if !vml]><img width=624 height=253
+        src="testing_files/image002.png"
+        alt="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"
+        v:shapes="Picture_x0020_1"><![endif]></span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>An example of modified data is when we
+        apply an offset to a face, we expect the centers to move by the same offset as
+        well, but we expect the offsets to stay the same as they are relative to the
+        face. Using various permutation of these across different data points allows
+        for a large range of test data to be generated</span></p>
+        
+        <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         id="Picture_x0020_2" o:spid="_x0000_i1031" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
+         style='width:358.5pt;height:53.25pt;visibility:visible;mso-wrap-style:square'>
+         <v:imagedata src="testing_files/image003.png" o:title="Text&#10;&#10;Description automatically generated"/>
+        </v:shape><![endif]--><![if !vml]><img width=478 height=71
+        src="testing_files/image004.png" alt="Text&#10;&#10;Description automatically generated"
+        v:shapes="Picture_x0020_2"><![endif]></span></p>
+        
+        <h2><span lang=EN-US>Testing</span></h2>
+        
+        <p class=MsoNormal><span lang=EN-US>Once we have access to the data, we just
+        generated two test classes for the ItchDetection and FaceData classes, each
+        with their own functions testing groups of functionalities, across the various
+        amounts of test data. Overall, we have a total of 8 test cases:</span></p>
+        
+        <p class=MsoListParagraphCxSpFirst style='margin-left:38.3pt;mso-add-space:
+        auto;text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+        lang=EN-US style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+        Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span></span></span><![endif]><span lang=EN-US>FaceData:</span></p>
+        
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span></span><![endif]><span lang=EN-US>Test center points</span></p>
+        
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span></span><![endif]><span lang=EN-US>Test offsets</span></p>
+        
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span></span><![endif]><span lang=EN-US>Test distance to vector
+        function </span></p>
+        
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span></span><![endif]><span lang=EN-US>Test angle conversion function</span></p>
+        
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:38.3pt;mso-add-space:
+        auto;text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+        lang=EN-US style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+        Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span></span></span><![endif]><span lang=EN-US>ItchDetection:</span></p>
+        
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span></span><![endif]><span lang=EN-US>Test scale difference</span></p>
+        
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span></span><![endif]><span lang=EN-US>Test itch location</span></p>
+        
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span></span><![endif]><span lang=EN-US>Test scaled comparison</span></p>
+        
+        <p class=MsoListParagraphCxSpLast style='margin-left:74.3pt;mso-add-space:auto;
+        text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span></span><![endif]><span lang=EN-US>Test sensitivity change</span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>When run in the command line, the following
+        output is given:<span style='mso-no-proof:yes'> <!--[if gte vml 1]><v:shape
+         id="Picture_x0020_5" o:spid="_x0000_i1030" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
+         style='width:468pt;height:62.25pt;visibility:visible;mso-wrap-style:square'>
+         <v:imagedata src="testing_files/image005.png" o:title="Text&#10;&#10;Description automatically generated"/>
+        </v:shape><![endif]--><![if !vml]><img width=624 height=83
+        src="testing_files/image006.png" alt="Text&#10;&#10;Description automatically generated"
+        v:shapes="Picture_x0020_5"><![endif]></span></span></p>
+        
+        <h1><span lang=EN-US>Integration Testing</span></h1>
+        
+        <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>The Integration we designed oversees
+        testing the functionality, accuracy, and performance speed of the itch
+        detection algorithm. This process involves running a set of images through the
+        itch detection algorithm and matching them with the expected result.</span></p>
+        
+        <h2><span lang=EN-US>Test Data:</span></h2>
+        
+        <p class=MsoNormal><span lang=EN-US>The image used for the integration testing
+        are arranged in the “test_images” folder (not pushed to the GitHub due to space
+        constraints). The folder can then be populated by a series of different test
+        conditions, in the example below the first test scenario is called “User1”,
+        which represents a same user in a same environment. </span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>Within the test scenario two folders must
+        be included: “calibration” and “detection”, which will contain the images
+        relating to user calibration and user itch detection respectively. Within the
+        calibration folder the calibration images can then be added directly.<span
+        style='mso-spacerun:yes'>&nbsp; </span>Contrarily, the detection folder still
+        needs additional folders. It needs to be populated by folders with the names
+        respective to the itch locations (itch location names defined in config folder)
+        which the images should match, e.g. for an image where you’d expect the
+        algorithm to detect a bottom left itch, the image should go into the bottom
+        left folder.</span></p>
+        
+        <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         id="Picture_x0020_7" o:spid="_x0000_i1029" type="#_x0000_t75" alt="A picture containing text&#10;&#10;Description automatically generated"
+         style='width:179.25pt;height:165pt;visibility:visible;mso-wrap-style:square'>
+         <v:imagedata src="testing_files/image007.png" o:title="A picture containing text&#10;&#10;Description automatically generated"/>
+        </v:shape><![endif]--><![if !vml]><img width=239 height=220
+        src="testing_files/image008.png"
+        alt="A picture containing text&#10;&#10;Description automatically generated"
+        v:shapes="Picture_x0020_7"><![endif]></span></p>
+        
+        <h2><span lang=EN-US>Testing:</span></h2>
+        
+        <p class=MsoNormal><span lang=EN-US>Upon running the integration test, the test
+        script will go through each user, calibrate the ItchDetection class based on
+        the calibration folder. It then calls the detectItch function on each landmark
+        generated from the images in the detection folder and cross references the
+        location from the ItchData output with the name of the folder to see if the algorithm
+        gave the correct output. In the process it will output the outcome of each individual
+        test, as well as the current config settings (sensitivity, resize factor) and
+        calibration information. The runtime of each test scenario is also logged to
+        the output with an average processing time per image given. </span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>Example test:</span></p>
+        
+        <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         id="Picture_x0020_10" o:spid="_x0000_i1028" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
+         style='width:327pt;height:189pt;visibility:visible;mso-wrap-style:square'>
+         <v:imagedata src="testing_files/image009.png" o:title="Text&#10;&#10;Description automatically generated"/>
+        </v:shape><![endif]--><![if !vml]><img width=436 height=252
+        src="testing_files/image010.png" alt="Text&#10;&#10;Description automatically generated"
+        v:shapes="Picture_x0020_10"><![endif]></span><span lang=EN-US><span
+        style='mso-spacerun:yes'>&nbsp;</span></span></p>
+        
+        <h2><span lang=EN-US>Conclusion</span></h2>
+        
+        <p class=MsoNormal><span lang=EN-US>Through the integration tests we were able
+        to learn more about the algorithm. Firstly, calibration accuracy had a large
+        impact on the success rates. This may seem obvious at first, but our
+        calibration images were taken to be as still as possible, and despite this
+        there were fluctuations in different lighting environments, which lead to less
+        steady results. Secondly </span></p>
+        
+        <h1><span lang=EN-US>User acceptance testing</span></h1>
+        
+        <p class=MsoNormal><span lang=EN-US>To get further understanding of how the
+        itch detection feels when used live, we gathered a group of various testers to
+        give us feedback on different aspects of the itch detection algorithm. As the
+        main focus of the project is about the algorithm, we won’t be taking feedback
+        on the UI or user flow. </span></p>
+        
+        <h2><span lang=EN-US>Testers</span></h2>
+        
+        <p class=MsoNormal><span lang=EN-US>For our testers, to get a full extent of
+        the algorithm’s effectiveness in a real world settings, we decided to get a
+        diverse mix of individuals which are in different physical conditions, which
+        includes a quadriplegic individual, our target user base, as well as an
+        individual affected by a less severe physical disability, and finally an
+        individual without any physical disability.</span></p>
+        
+        <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         id="Picture_x0020_12" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:149.25pt;
+         height:149.25pt;visibility:visible;mso-wrap-style:square'>
+         <v:imagedata src="testing_files/image011.jpg" o:title=""/>
+        </v:shape><![endif]--><![if !vml]><img width=199 height=199
+        src="testing_files/image012.jpg" v:shapes="Picture_x0020_12"><![endif]><!--[if gte vml 1]><v:shape
+         id="Picture_x0020_13" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:150pt;
+         height:150pt;visibility:visible;mso-wrap-style:square'>
+         <v:imagedata src="testing_files/image013.jpg" o:title=""/>
+        </v:shape><![endif]--><![if !vml]><img width=200 height=200
+        src="testing_files/image013.jpg" v:shapes="Picture_x0020_13"><![endif]><!--[if gte vml 1]><v:shape
+         id="Picture_x0020_11" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:153.75pt;
+         height:150pt;visibility:visible;mso-wrap-style:square'>
+         <v:imagedata src="testing_files/image014.jpg" o:title=""/>
+        </v:shape><![endif]--><![if !vml]><img width=205 height=200
+        src="testing_files/image015.jpg" v:shapes="Picture_x0020_11"><![endif]></span></p>
+        
+        <p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>Frank<span
+        style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+        Diandra<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+        Dennis</span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>Frank is a quadriplegic that’s unable to
+        move anything from the neck down due to his injury back in Vietnam. </span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>Diandra has limited hand mobility, she is
+        still able to touch her face but she finds it harder than most of us, she
+        spends a lot of time sitting down with low movement. </span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>Dennis is an active bartender, he spends
+        most of his days out and moving around, he has no physical disability but can
+        get quite lazy when he is watching movies or playing video games. </span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>For user acceptance testing we will be
+        covering the following test cases:</span></p>
+        
+        <p class=MsoNormal><span lang=EN-US>Obeying </span></p>
+        
+        </div>
     </div>
   </section>
   <!--=== About Us End ======-->
