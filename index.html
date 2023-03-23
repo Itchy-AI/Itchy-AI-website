@@ -32,24 +32,13 @@
 
   <!--== Header Start ==-->
   <nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full no-border">
-  	<!--== Start Top Search ==-->
-    <div class="fullscreen-search-overlay" id="search-overlay"> <a href="#" class="fullscreen-close" id="fullscreen-close-button"><i class="icofont icofont-close"></i></a>
-      <div id="fullscreen-search-wrapper">
-        <form method="get" id="fullscreen-searchform">
-          <input type="text" value="" placeholder="Type and hit Enter..." id="fullscreen-search-input" class="search-bar-top">
-          <i class="fullscreen-search-icon icofont icofont-search">
-          <input value="" type="submit">
-          </i>
-        </form>
-      </div>
-    </div>
-    <!--== End Top Search ==-->
+
     <div class="container">
       <!--== Start Atribute Navigation ==-->
       <div class="attr-nav hidden-xs sm-display-none">
         <ul>
-          <li class="side-menu"><a href="#"><i class="icofont icofont-navigation-menu"></i></a></li>
-          <li class="search"><a href="#" id="search-button"><i class="icofont icofont-search"></i></a></li>
+          <li><a href="https://github.com/Itchy-AI/Itchy-AI"><i class="icofont icofont-social-github"></i></a></li>
+          <li><a href="assets/development manual.pdf"><i class="icofont icofont-support-faq"></i></a></li>
         </ul>
       </div>
       <!--== End Atribute Navigation ==-->
@@ -57,37 +46,81 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="home.html"> <img class="logo logo-display" src="assets/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="assets/images/logo-black.png" alt=""> </a> </div>
+        <div class="logo"> <a href="index.html"> <img class="logo logo-display" src="assets/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="assets/images/logo-black.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
       <!--== Collect the nav links, forms, and other content for toggling ==-->
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="nav navbar-nav navbar-center" data-in="fadeIn" data-out="fadeOut">
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+            <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                 <ul class="dropdown-menu">
                     <li><a class="page-scroll" href="#home">Introduction</a></li>
-                    <li><a class="page-scroll" href="#background">Abstract</a></li>
+                    <li><a class="page-scroll" href="#abstract">Abstract</a></li>
                     <li><a class="page-scroll" href="#portfolio">Intro-Video</a></li>
                     <li><a class="page-scroll" href="#team">Team Members</a></li>
                     <li><a class="page-scroll" href="#gantt">Project Management</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a></li>
+            <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="requirement.html#background">Project Background & Partner</a></li>
+                <li><a class="page-scroll" href="requirement.html#goal">Project Goal</a></li>
+                <li><a class="page-scroll" href="requirement.html#gathering">Requirement Gathering</a></li>
+                <li><a class="page-scroll" href="requirement.html#personas">Personas​</a></li>
+                <li><a class="page-scroll" href="requirement.html#casediagram">Use Cases</a></li>
+                <li><a class="page-scroll" href="requirement.html#moscow">MoSCoW List</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a></li>
+            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="research.html#other">Reviews on the other Project</a></li>
+                <li><a class="page-scroll" href="research.html#mechanism">Itch mechanism</a></li>
+                <li><a class="page-scroll" href="research.html#motion">Tech Review (Motion Magnification)​</a></li>
+                <li><a class="page-scroll" href="research.html#respiration">Review on respiration detection</a></li>
+                <li><a class="page-scroll" href="research.html#possibility">Possible devices</a></li>
+                <li><a class="page-scroll" href="research.html#choice">Algorithms and programming related choices​</a></li>
+                <li><a class="page-scroll" href="research.html#decision">Technical Decisions</a></li>
+                <li><a class="page-scroll" href="research.html#reference">References</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a></li>
+            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="#"></a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a></li>
+            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="implementation.html#technologies">Technologies</a></li>
+                <li><a class="page-scroll" href="implementation.html#algorithms">Itch detection Algorithm</a></li>
+                <li><a class="page-scroll" href="implementation.html#backend">Backend</a></li>
+                <li><a class="page-scroll" href="implementation.html#frontend">Frontend</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a></li>
+            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="testing.html#strategy">Testing Strategy </a></li>
+                <li><a class="page-scroll" href="testing.html#unit">Unit Test</a></li>
+                <li><a class="page-scroll" href="testing.html#integration">Integration Test</a></li>
+                <li><a class="page-scroll" href="testing.html#user">User Acceptance Testing</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a></li>
+            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="evaluation.html#moscow">MoSCoW List Achievement</a></li>
+                <li><a class="page-scroll" href="evaluation.html#individual">Individual Contribution</a></li>
+                <li><a class="page-scroll" href="evaluation.html#critcal">Critical Evaluation</a></li>
+                <li><a class="page-scroll" href="evaluation.html#bug">Bug List</a></li>
+                <li><a class="page-scroll" href="evaluation.html#future">Future Work</a></li>
+              </ul>
+            </li>
 
             <li class="dropdown"><a href="appendices.html" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>
-
-            <!--<li class="dropdown"><a href="http://www.itchaireport.wordpress.com" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>-->
         </ul>
       </div>
       <!--== /.navbar-collapse ==-->
@@ -125,7 +158,7 @@
 
     <!--== Abstract Start ==-->
   <section id="abstract" style="background-color:rgb(255, 255, 255);">
-    <div class="section-title "><h1 class="text-center "> <u>Abstract</u></h1></div>
+    <div class="section-title "><h1 class="text-center ">  Abstract</u></h1></div>
     
     <div class="container">
       <div class="row">
@@ -149,7 +182,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40" style="margin-top: 20px;">
           <h2>Problem statement​</h2>
           <p class="mt-30  font-20px line-height-40 text-left">
-            People like Henry who is quadriplegia are paving the way in assistive robotics. This is the first part of a project to help people like Henry with a range of tasks, starting simply to help him scratch when there is an itch on his face. Our project focus more onto AI face detection which we build a system that helps to detect an itch on clients' faces. After conducting some thorough research we’ve discovered that an itch is caused by a stimulation of nerve endings which could be detected via the use of sensory electrodes, however, this puts convenience and safety into question.​
+            People like Henry who is quadriplegia are paving the way in assistive robotics. This is the first part of a project to help people like Henry with a range of tasks, starting simply to help him scratch when there is an itch on his face. Our project focus more onto AI face detection which we build a system that helps to detect an itch on clients' faces. After conducting some thorough research we've discovered that an itch is caused by a stimulation of nerve endings which could be detected via the use of sensory electrodes, however, this puts convenience and safety into question.​
           </p>
         </div>
       </div>
@@ -199,7 +232,7 @@
            <div class="text-left">
              <h1 class="default-color font-800">03</h1>
              <h2 class="mt-20 white-color font-700">Testing</h2>
-             <p class="mb-0 mt-20 white-color">Test design is a process that describes “how” testing should be done. It includes processes for the identifying test cases.</p>
+             <p class="mb-0 mt-20 white-color">Test design is a process that describes "how" testing should be done. It includes processes for the identifying test cases.</p>
            </div>
          </div>
          <div class="col-md-3 col-sm-6 col-xs-12 line xs-mb-30">
@@ -222,7 +255,7 @@
         <div class="row">
             <div class="col-md-12">
             <div class="section-title text-center">
-                <h1 class="dark-color"><u>Our Team</u></h1>
+                <h1 class="dark-color"> Our Team</u></h1>
                 <hr class="center_line white-bg">
             </div>
             </div>
@@ -302,7 +335,7 @@
     <!-- content start -->
 
    <section id = "gantt" style="background-color:rgb(247, 247, 247);">
-    <div class="section-title "><h1 class="text-center "> <u>Project Management​​</u></h1></div>
+    <div class="section-title "><h1 class="text-center ">  Project Management​​</u></h1></div>
     
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40" style="margin-top: 20px; margin-left: 5%;">

@@ -159,7 +159,7 @@
   
   <!-- Main title start-->
   <section class="parallax-bg fixed-bg xs-pt-40 xs-pb-40 height-110px" data-parallax-bg-image="assets/images/background/earth-bg.jpg" data-parallax-speed="0.5" data-parallax-direction="up">
-     
+    <div class="overlay-bg"></div>
     <div class="container">
       <div class="row">
         <div class="col-md-10 text-left parallax-content height-100px centerize-col">
@@ -179,7 +179,7 @@
       <!-- content start -->
 
       <section id = "background" style="background-color:rgb(255, 255, 255);">
-        <h1 class="text-center "> Project Background & Partner</h1>
+        <div class="section-title "><h1 class="text-center "> Project Background & Partner</h1></div>
         
         <div class="container">
           <div class="row">
@@ -204,7 +204,7 @@
       <!-- content start -->
 
       <section id = "goal" style="background-color:rgb(247, 247, 247);">
-        <div class="section-title "><h1 class="text-center "> <u>Project Goal​​</u></h1></div>
+        <div class="section-title "><h1 class="text-center ">  Project Goal​ </h1></div>
         
         <div class="container">
           <div class="row">
@@ -221,7 +221,7 @@
       <!-- content start -->
 
       <section id = "gathering" style="background-color:rgb(255, 255, 255);">
-        <div class="section-title "><h1 class="text-center "> <u>Requirement Gathering​​</u></h1></div>
+        <div class="section-title "><h1 class="text-center ">  Requirement Gathering​ </h1></div>
         
         <div class="container">
           <div class="row">
@@ -316,7 +316,7 @@
                           Q2. What kind of interface are you looking for?​ 
                         </p>
                         <p class="mt-30  font-20px line-height-40 text-left">
-                          I would like the interface to display everything the AI sees, not only whether it has detected an Itch. It’s important that we’re able to determine whether the AI works properly without having to wait for an itch occur.​
+                          I would like the interface to display everything the AI sees, not only whether it has detected an Itch. It's important that we're able to determine whether the AI works properly without having to wait for an itch occur.​
                         </p>
                       </div>
                     </div>
@@ -326,7 +326,7 @@
                           Q3. Could you tell me about the robot?
                         </p>
                         <p class="mt-30  font-20px line-height-40 text-left">
-                          It’s a light, small and relatively cheap robot. It consists of a base with a vertical stand, on the stand there is a vertical motor and a stretcher with a claw,. Above the stand is a depth sensor camera in facing forward, which gives a clear image of what the robot is looking at while being able to gauge the distance of objects in it’s surroundings.​
+                          It's a light, small and relatively cheap robot. It consists of a base with a vertical stand, on the stand there is a vertical motor and a stretcher with a claw,. Above the stand is a depth sensor camera in facing forward, which gives a clear image of what the robot is looking at while being able to gauge the distance of objects in it's surroundings.​
                         </p>
                       </div>
                     </div>
@@ -346,7 +346,7 @@
       <!-- content start -->
 
       <section id = "personas" style="background-color:rgb(247, 247, 247);">
-        <div class="section-title "><h1 class="text-center "> <u>Personas​​</u></h1></div>
+        <div class="section-title "><h1 class="text-center ">  Personas​ </h1></div>
         
         <div class="container">
           <div class="row">
@@ -370,7 +370,7 @@
       <!-- content start -->
 
       <section id = "casediagram" style="background-color:rgb(255, 255, 255);">
-        <div class="section-title "><h1 class="text-center "> <u>Use Cases​​</u></h1></div>
+        <div class="section-title "><h1 class="text-center ">  Use Cases​ </h1></div>
         
         <div class="container">
           <div class="row">
@@ -383,6 +383,107 @@
       </section>
 
       <!-- content end -->
+
+      <!-- MOSCOW start -->
+
+      <section id = "moscow" style="background-color:rgb(247, 247, 247);">
+        <div class="section-title "><h1 class="text-center ">  MoSCoW List </h1></div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 techtable" >
+              <div class="card">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover mb-0 text-md-nowrap">
+                      <thead>
+                        <tr>
+                          <th>Must have</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">- Make an algorithm that can analyse facial movement from a user to detect the presence and approximate location of an itch​</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">- The algorithm must be calibratable to best adapt to different face​</td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="margin-top: 40px;">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover mb-0 text-md-nowrap">
+                      <thead>
+                        <tr>
+                          <th>Should have</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">- The algorithm should still work if the user moves their head after calibration​</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">- There should be a testing platform with an accessible UI to use the AI with your webcam​</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">- The test platform should allow for calibration and configure settings​​</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">- The test platform should have the option to show facial landmarks to improve testing​</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">- A web hostable web API to utilise the itch detection algorithm​​</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="margin-top: 40px;">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover mb-0 text-md-nowrap">
+                      <thead>
+                        <tr>
+                          <th>Could have</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">- The algorithm could add subscribers/listeners that have various functionalities when an itch is detected:​
+                            <p>  </p>
+                            <p style="margin-left: 15px;">A robot could assist with the itch when an itch is detected​</p>
+                            
+                            <p style="margin-left: 15px;">The itch data could be sent to a logging database when an itch is detected​</p></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">- Improvement in light sensitivity issue of face recognition​</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">- Make an algorithm that can analyse facial movement from a user to detect the presence and approximate location of an itch​</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">- The algorithm must be calibratable to best adapt to different face​</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- MOSCOW end -->
 
       <!--== Footer Start ==-->
   <footer class="footer">

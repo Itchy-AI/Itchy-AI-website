@@ -121,16 +121,16 @@
         
         <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
-        <p class=MsoNormal><span lang=EN-US>As this project’s primary focus was on the
+        <p class=MsoNormal><span lang=EN-US>As this project's primary focus was on the
         itch detection algorithm, the majority of the testing was directed towards ensuring
-        it’s functionality. Consequently, we did not divert any resources to setting up
+        it's functionality. Consequently, we did not divert any resources to setting up
         a test strategy (although still informally tested) for both the python and HTML
         webcam capture and display systems. Their purpose are for visualizing the
         algorithm for debugging, testing, and gathering feedback, but not are not core proponent
         to the algorithm and end deliverable. </span></p>
         
         <p class=MsoNormal><span lang=EN-US>To cover all relevant aspects of the
-        algorithm we’ve conducted 3 different types of testing: unit testing
+        algorithm we've conducted 3 different types of testing: unit testing
         integration testing, and user acceptance testing. </span></p>
         
         <p class=MsoNormal><span lang=EN-US>The unit testing was the first line of
@@ -138,7 +138,7 @@
         was operating as intended and returned the desired results. The unit testing
         focused on testing the ItchDetection and FaceData classes as those were the
         main bulk of the complex logic and the sole proponents to the itch detection
-        algorithm, which’s the primary deliverable.</span></p>
+        algorithm, which's the primary deliverable.</span></p>
         
         <p class=MsoNormal><span lang=EN-US>The integration testing was dedicated to
         black box testing, ensuring that given a certain input, the output of the itch
@@ -149,7 +149,7 @@
         
         <p class=MsoNormal><span lang=EN-US>Finally, we conducted user acceptance
         testing to gather feedback from users. As the result is an AI, UI design and
-        user flow is not something we’re focused on, rather we will be mainly focusing
+        user flow is not something we're focused on, rather we will be mainly focusing
         on how accurate the detection feels to the user, and how unaccommodating the constraints
         may feel to the user (lighting, face positioning, minimal movement). </span></p>
         
@@ -213,7 +213,7 @@
         </v:shape><![endif]--><![if !vml]><img width=624 height=253
         src="testing_files/image002.png"
         alt="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"
-        v:shapes="Picture_x0020_1"><![endif]></span></p>
+        v:shapes="Picture_x0020_1"> </span></p>
         
         <p class=MsoNormal><span lang=EN-US>An example of modified data is when we
         apply an offset to a face, we expect the centers to move by the same offset as
@@ -227,7 +227,7 @@
          <v:imagedata src="testing_files/image003.png" o:title="Text&#10;&#10;Description automatically generated"/>
         </v:shape><![endif]--><![if !vml]><img width=478 height=71
         src="testing_files/image004.png" alt="Text&#10;&#10;Description automatically generated"
-        v:shapes="Picture_x0020_2"><![endif]></span></p>
+        v:shapes="Picture_x0020_2"> </span></p>
         
         <h2><span lang=EN-US>Testing</span></h2>
         
@@ -237,65 +237,63 @@
         amounts of test data. Overall, we have a total of 8 test cases:</span></p>
         
         <p class=MsoListParagraphCxSpFirst style='margin-left:38.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
-        lang=EN-US style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-        Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </span></span></span><![endif]><span lang=EN-US>FaceData:</span></p>
+        auto;text-indent:-18.0pt;mso-list:l0 level1 lfo1'> <span
+        lang=EN-US  >--<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span></span></span> <span lang=EN-US>FaceData:</span></p>
         
         <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
         lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
         style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span><![endif]><span lang=EN-US>Test center points</span></p>
+        </span></span></span> <span lang=EN-US>Test center points</span></p>
         
         <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
         lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
         style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span><![endif]><span lang=EN-US>Test offsets</span></p>
+        </span></span></span> <span lang=EN-US>Test offsets</span></p>
         
         <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
         lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
         style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span><![endif]><span lang=EN-US>Test distance to vector
+        </span></span></span> <span lang=EN-US>Test distance to vector
         function </span></p>
         
         <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
         lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
         style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span><![endif]><span lang=EN-US>Test angle conversion function</span></p>
+        </span></span></span> <span lang=EN-US>Test angle conversion function</span></p>
         
         <p class=MsoListParagraphCxSpMiddle style='margin-left:38.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
-        lang=EN-US style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-        Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </span></span></span><![endif]><span lang=EN-US>ItchDetection:</span></p>
+        auto;text-indent:-18.0pt;mso-list:l0 level1 lfo1'> <span
+        lang=EN-US  >--<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span></span></span> <span lang=EN-US>ItchDetection:</span></p>
         
         <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
         lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
         style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span><![endif]><span lang=EN-US>Test scale difference</span></p>
+        </span></span></span> <span lang=EN-US>Test scale difference</span></p>
         
         <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
         lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
         style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span><![endif]><span lang=EN-US>Test itch location</span></p>
+        </span></span></span> <span lang=EN-US>Test itch location</span></p>
         
         <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
         lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
         style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span><![endif]><span lang=EN-US>Test scaled comparison</span></p>
+        </span></span></span> <span lang=EN-US>Test scaled comparison</span></p>
         
         <p class=MsoListParagraphCxSpLast style='margin-left:74.3pt;mso-add-space:auto;
-        text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+        text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
         lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
         style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span><![endif]><span lang=EN-US>Test sensitivity change</span></p>
+        </span></span></span> <span lang=EN-US>Test sensitivity change</span></p>
         
         <p class=MsoNormal><span lang=EN-US>When run in the command line, the following
         output is given:<span style='mso-no-proof:yes'> <!--[if gte vml 1]><v:shape
@@ -304,7 +302,7 @@
          <v:imagedata src="testing_files/image005.png" o:title="Text&#10;&#10;Description automatically generated"/>
         </v:shape><![endif]--><![if !vml]><img width=624 height=83
         src="testing_files/image006.png" alt="Text&#10;&#10;Description automatically generated"
-        v:shapes="Picture_x0020_5"><![endif]></span></span></p>
+        v:shapes="Picture_x0020_5"> </span></span></p>
         
         <h1><span lang=EN-US>Integration Testing</span></h1>
         
@@ -318,19 +316,19 @@
         <h2><span lang=EN-US>Test Data:</span></h2>
         
         <p class=MsoNormal><span lang=EN-US>The image used for the integration testing
-        are arranged in the “test_images” folder (not pushed to the GitHub due to space
+        are arranged in the "test_images" folder (not pushed to the GitHub due to space
         constraints). The folder can then be populated by a series of different test
-        conditions, in the example below the first test scenario is called “User1”,
+        conditions, in the example below the first test scenario is called "User1",
         which represents a same user in a same environment. </span></p>
         
         <p class=MsoNormal><span lang=EN-US>Within the test scenario two folders must
-        be included: “calibration” and “detection”, which will contain the images
+        be included: "calibration" and "detection", which will contain the images
         relating to user calibration and user itch detection respectively. Within the
         calibration folder the calibration images can then be added directly.<span
-        style='mso-spacerun:yes'>&nbsp; </span>Contrarily, the detection folder still
+         >&nbsp; </span>Contrarily, the detection folder still
         needs additional folders. It needs to be populated by folders with the names
         respective to the itch locations (itch location names defined in config folder)
-        which the images should match, e.g. for an image where you’d expect the
+        which the images should match, e.g. for an image where you'd expect the
         algorithm to detect a bottom left itch, the image should go into the bottom
         left folder.</span></p>
         
@@ -341,7 +339,7 @@
         </v:shape><![endif]--><![if !vml]><img width=239 height=220
         src="testing_files/image008.png"
         alt="A picture containing text&#10;&#10;Description automatically generated"
-        v:shapes="Picture_x0020_7"><![endif]></span></p>
+        v:shapes="Picture_x0020_7"> </span></p>
         
         <h2><span lang=EN-US>Testing:</span></h2>
         
@@ -363,8 +361,8 @@
          <v:imagedata src="testing_files/image009.png" o:title="Text&#10;&#10;Description automatically generated"/>
         </v:shape><![endif]--><![if !vml]><img width=436 height=252
         src="testing_files/image010.png" alt="Text&#10;&#10;Description automatically generated"
-        v:shapes="Picture_x0020_10"><![endif]></span><span lang=EN-US><span
-        style='mso-spacerun:yes'>&nbsp;</span></span></p>
+        v:shapes="Picture_x0020_10"> </span><span lang=EN-US><span
+         >&nbsp;</span></span></p>
         
         <h2><span lang=EN-US>Conclusion</span></h2>
         
@@ -380,13 +378,13 @@
         <p class=MsoNormal><span lang=EN-US>To get further understanding of how the
         itch detection feels when used live, we gathered a group of various testers to
         give us feedback on different aspects of the itch detection algorithm. As the
-        main focus of the project is about the algorithm, we won’t be taking feedback
+        main focus of the project is about the algorithm, we won't be taking feedback
         on the UI or user flow. </span></p>
         
         <h2><span lang=EN-US>Testers</span></h2>
         
         <p class=MsoNormal><span lang=EN-US>For our testers, to get a full extent of
-        the algorithm’s effectiveness in a real world settings, we decided to get a
+        the algorithm's effectiveness in a real world settings, we decided to get a
         diverse mix of individuals which are in different physical conditions, which
         includes a quadriplegic individual, our target user base, as well as an
         individual affected by a less severe physical disability, and finally an
@@ -397,24 +395,24 @@
          height:149.25pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="testing_files/image011.jpg" o:title=""/>
         </v:shape><![endif]--><![if !vml]><img width=199 height=199
-        src="testing_files/image012.jpg" v:shapes="Picture_x0020_12"><![endif]><!--[if gte vml 1]><v:shape
+        src="testing_files/image012.jpg" v:shapes="Picture_x0020_12"> <!--[if gte vml 1]><v:shape
          id="Picture_x0020_13" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:150pt;
          height:150pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="testing_files/image013.jpg" o:title=""/>
         </v:shape><![endif]--><![if !vml]><img width=200 height=200
-        src="testing_files/image013.jpg" v:shapes="Picture_x0020_13"><![endif]><!--[if gte vml 1]><v:shape
+        src="testing_files/image013.jpg" v:shapes="Picture_x0020_13"> <!--[if gte vml 1]><v:shape
          id="Picture_x0020_11" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:153.75pt;
          height:150pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="testing_files/image014.jpg" o:title=""/>
         </v:shape><![endif]--><![if !vml]><img width=205 height=200
-        src="testing_files/image015.jpg" v:shapes="Picture_x0020_11"><![endif]></span></p>
+        src="testing_files/image015.jpg" v:shapes="Picture_x0020_11"> </span></p>
         
         <p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>Frank<span
         style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
         Diandra<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
         Dennis</span></p>
         
-        <p class=MsoNormal><span lang=EN-US>Frank is a quadriplegic that’s unable to
+        <p class=MsoNormal><span lang=EN-US>Frank is a quadriplegic that's unable to
         move anything from the neck down due to his injury back in Vietnam. </span></p>
         
         <p class=MsoNormal><span lang=EN-US>Diandra has limited hand mobility, she is
