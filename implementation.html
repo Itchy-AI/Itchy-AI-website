@@ -117,9 +117,11 @@
         <section id = "technologies" style="background-color:rgb(255, 255, 255);">
           <div class="container">  
             <div class="row">
+              
               <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+                <div class="section-title">
               <h1 class="text-center" style="margin-bottom: 70px;"><span lang=EN-US>Technologies</span></h1>
-
+                </div>
 
                   <!--== Tech Start ==-->
 
@@ -259,23 +261,24 @@
         
 
       <section id = "algorithms" style="background-color:rgb(247, 247, 247);">
-        
-         <h1 class="text-center "><span lang=EN-US>Itch detection Algorithm</span></h1>
-         <div class="container">
+        <div class="section-title">
+         <h1 class="text-center"><span lang=EN-US>Itch detection Algorithm</span></h1>
+      </div>
+      <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
         <h3 class="mt-30"><span lang=EN-US>Face landmarks:</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Throughout the code and the following
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Throughout the code and the following
         explanation there will be many references to the face landmarks, so it's
         important to understand what they are, what they represent, and its
         representation in code.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Face landmarks are a set of coordinates
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Face landmarks are a set of coordinates
         representing different landmarks (key parts) of the face. In Dlib, the library
         we are using to generate the face landmarks, the following are the landmarks that
         are detected (72 points total): </span></p>
@@ -319,18 +322,18 @@
         lang=EN-US  >--<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></span> <span lang=EN-US>Bottom Lip: 12 points</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>In python code, face landmarks are
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>In python code, face landmarks are
         represented as a dictionary (key, value pair) where the key is the landmark
         type, and the value is a list of coordinates in the form of an &lt;int, int&gt;
         tuples. Note that the origin of the coordinates is the top left corner, with
         downwards being positive y, and rightwards being positive x. </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Below is an example of a face landmark in python:</span><span
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Below is an example of a face landmark in python:</span><span
         lang=EN-US style='font-size:10.5pt;line-height:107%;font-family:Consolas;
         mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
         color:#EEFFFF'><o:p></o:p></span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
          id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
          path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
          <v:stroke joinstyle="miter"/>
@@ -354,36 +357,39 @@
          alt="Background pattern&#10;&#10;Description automatically generated" style='width:419.25pt;
          height:154.5pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image001.png" o:title="Background pattern&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=559 height=206
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=559 height=206
         src="Implementation_files/image002.png"
         alt="Background pattern&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_2"> </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>When the points are plotted onto an the
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>When the points are plotted onto an the
         image used to create the landmarks it looks as follows:</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_3" o:spid="_x0000_i1054" type="#_x0000_t75" style='width:306pt;
          height:229.5pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image003.jpg" o:title=""/>
-        </v:shape><![endif]--><![if !vml]><img width=408 height=306
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=408 height=306
         src="Implementation_files/image004.jpg" v:shapes="Picture_x0020_3"> </span></p>
         
         <h2><span lang=EN-US><o:p>&nbsp;</o:p></span></h2>
         
         <h2><span lang=EN-US>Explanation of the algorithm:</span></h2>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>As stated previously, the itch detection algorithm involves detecting and analyzing deliberate facial movements from the user to communicate the presence and location of an itch.  </span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>As stated previously, the itch detection 
+        algorithm involves detecting and analyzing deliberate facial movements from the user to communicate the presence 
+        and location of an itch. We are specifically using the left lip, right lip, and eyebrows as the landmarks to 
+        communicate itch location due to the fact that they are the facial landmarks with the most mobility. </span></p>
 
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The Itch detection algorithm is comprised
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The Itch detection algorithm is comprised
         of two difference classes, the first being the FaceData class, it's role being
         to store and compute information about a face, provided a set of landmarks. The
         second being the ItchDetection class, it's role being to compare two different
         FaceData objects (the calibrated face, and current face to find itch) to deduce
         the presence and location of an itch.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>In more detail, the FaceData class computes
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>In more detail, the FaceData class computes
         the relative offset of the left lip, right lip, and eyebrows compared to the center
         of the nose. The ItchDetection class then compares these values between the
         calibrated and face to be detected, and if these differences surpass a certain
@@ -393,113 +399,113 @@
         left lip surpassed the threshold while the right lip and eyebrows did not, the
         itch location will be the bottom left of the face. </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Below is a flow chart giving a top level
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Below is a flow chart giving a top level
         view of the itch detection described above.<sub><o:p></o:p></sub></span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><sub><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><sub><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_29" o:spid="_x0000_i1053" type="#_x0000_t75" style='width:327pt;
          height:349.5pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image005.png" o:title=""/>
-        </v:shape><![endif]--><![if !vml]><img width=436 height=466
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=436 height=466
         src="Implementation_files/image006.png" v:shapes="Picture_x0020_29"> </span><span
         lang=EN-US><o:p></o:p></span></sub></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
         <h2><span lang=EN-US>FaceData Class:</span></h2>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
         <h3 class="mt-30"><span lang=EN-US>Creating a Face Data:</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Creating a FaceData object is comprised 3
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Creating a FaceData object is comprised 3
         parts: averaging the landmarks, caching key points, and calculating the maximum
         standard deviation between the average landmarks.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_7" o:spid="_x0000_i1052" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:385.5pt;height:72.75pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image007.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=514 height=97
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=514 height=97
         src="Implementation_files/image008.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_7"> </span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Averaging landmarks</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Averaging the landmarks begins by creating
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Averaging the landmarks begins by creating
         a new dictionary, we then loop through each landmark type and then each
         coordinate within that landmark, continuously expanding the average landmarks
         dictionary and averaging the coordinates of all the face landmarks one
         coordinate at a time.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_5" o:spid="_x0000_i1051" type="#_x0000_t75" alt="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"
          style='width:468pt;height:75pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image009.png" o:title="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"/>
-        </v:shape><![endif]--><![if !vml]><img width=624 height=100
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=624 height=100
         src="Implementation_files/image010.png"
         alt="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"
         v:shapes="Picture_x0020_5"> </span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Caching key points:</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Caching key points simply consists of
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Caching key points simply consists of
         calling each function that calculates the key points and storing them into
         variables, these variables will be used multiple times throughout the code and
         caching these values will allow us to save computation time. The key point
         functions will be covered in the next section.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><span
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US><span
          >&nbsp;</span><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_6" o:spid="_x0000_i1050" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:279.75pt;height:80.25pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image011.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=373 height=107
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=373 height=107
         src="Implementation_files/image012.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_6"> </span></span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Calculating the maximum std:</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Calculating the maximum standard deviation
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Calculating the maximum standard deviation
         consists of going through each the 72 <span
          >&nbsp;</span>face landmark points and calculating the magnitude
         of the standard deviation across each individual coordinate while accounting
         for the size of the face represented by chin_mean_distance, and keeping track
         of the largest standard deviation found.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_9" o:spid="_x0000_i1049" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:468pt;height:96.75pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image013.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=624 height=129
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=624 height=129
         src="Implementation_files/image014.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_9"> </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
         <h3 class="mt-30"><span lang=EN-US>Computing key points:</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The key points are additional values that
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The key points are additional values that
         we calculate based off the face landmark that will aid in calculating the offsets
         (covered in the next section). There are 3 distinct types of key points: the
         centers, the chin mean distance, and the face y <span class=GramE>angle</span></span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Calculating center</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The centers consist of getting the average
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The centers consist of getting the average
         of one or more landmark's coordinates, this essentially denotes the coordinate
         in the center of all the other points. </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_10" o:spid="_x0000_i1048" type="#_x0000_t75" style='width:463.5pt;
          height:53.25pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image015.png" o:title=""/>
-        </v:shape><![endif]--><![if !vml]><img width=618 height=71
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=618 height=71
         src="Implementation_files/image016.png" v:shapes="Picture_x0020_10"> </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Above is an example of how to calculate the
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Above is an example of how to calculate the
         nose center but for the other centers, they are calculated by averaging the
         following landmarks:</span></p>
         
@@ -527,28 +533,28 @@
         </span></span></span> <span lang=EN-US>Right eyebrow center -&gt;
         right eyebrow points</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Calculating chin mean distance:</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The chin mean distance is the next distinct
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The chin mean distance is the next distinct
         type of key points, it's used to represent the size of the face, it's obtained
         by getting the mean absolute distance of the chin points, which is defined as the
         average absolute deviation from a central point, with the central point being
         the face center. In the code we start by computing an array of magnitudes between
         the chin points and the center point, then taking it's mean.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_11" o:spid="_x0000_i1047" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:468pt;height:87.75pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image017.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=624 height=117
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=624 height=117
         src="Implementation_files/image018.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_11"> </span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Calculating face y angle:</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The face y angle is the final distinct key
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The face y angle is the final distinct key
         point, it's used to represent the face's y tilt, the y axis being the axis parallel
         to the camera's direction of site. The point is used to allow for the
         comparison between two faces that may have a different y tilt. It is calculated
@@ -557,20 +563,20 @@
         perfectly with the horizontal center of the face regardless of what facial
         muscles are contracted. </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The code consists of calculating the
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The code consists of calculating the
         arctangent between the y and x coordinate of the difference between the nose
         center and eyes mid-point coordinates. </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_12" o:spid="_x0000_i1046" type="#_x0000_t75" style='width:468pt;
          height:42pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image019.png" o:title=""/>
-        </v:shape><![endif]--><![if !vml]><img width=624 height=56
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=624 height=56
         src="Implementation_files/image020.png" v:shapes="Picture_x0020_12"> </span></p>
         
         <h3 class="mt-30"><span lang=EN-US>Computing offsets:</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The offsets are values that are used to
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The offsets are values that are used to
         gauge the relative distance of a point in comparison to a certain point on the
         face. These offset are then compared between the calibrated and the face to
         itch detect to determine how much the point has moved and thus if an itch was
@@ -580,13 +586,13 @@
         
         <h4 class="mt-30"><span lang=EN-US>Distance to vector: </span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The distance to vector function is the most
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The distance to vector function is the most
         important function to calculating the offsets. The purpose of a the function is
         to calculate the perpendicular distance between a point and a vector. The
         inputs it gets given a point the vector should pass through, the angle of the
         vector, and the point who's distance we're trying to calculate.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><span
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><span
          >&nbsp;</span>In code, we first start by caclulating the
         directional vector based on the angle given and <span
          >&nbsp;</span>calculating the difference vector between
@@ -596,17 +602,17 @@
         obtain the perpendicular distance of the point. The absoulte value of the
         distance is then taken to ensure that the result is positive.<o:p></o:p></span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_14" o:spid="_x0000_i1045" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:364.5pt;height:103.5pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image021.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=486 height=138
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=486 height=138
         src="Implementation_files/image022.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_14"> </span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Axis offset:</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The axis offset functions are an
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The axis offset functions are an
         intermediary between the distance to vector function and the landmark offset
         functions. The function takes the point who's distance we're trying to
         calculate a parameter and calling the distance to vector function with a preset
@@ -616,39 +622,39 @@
         angle, and for the y offset the angle it's the face's y angle with an
         additional pi/2 radians (or 90 degrees)</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><span
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US><span
          >&nbsp;</span><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_15" o:spid="_x0000_i1044" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:339pt;height:91.5pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image023.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=452 height=122
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=452 height=122
         src="Implementation_files/image024.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_15"> </span></span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Landmark offset:</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The landmark offset function's main purpose
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The landmark offset function's main purpose
         is to act as <span class=SpellE>a</span> abstraction for the FaceData class.
         They simply call the axis offset functions with a preset argument for the point
         to check. It ensures consistency, which's important as these will be the
         functions called by the ItchDetection class when comparing the offsets between
         faces.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_16" o:spid="_x0000_i1043" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:226.5pt;height:159.75pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image025.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=302 height=213
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=302 height=213
         src="Implementation_files/image026.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_16"> </span></p>
         
         <h2><span lang=EN-US>ItchDetection Class:</span></h2>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
         <h3 class="mt-30"><span lang=EN-US>Calibration and Computing thresholds:</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><span
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><span
          >&nbsp;</span>There are two types of calibration
         methods within the itch detection class, the main one being on the fly
         calibration, and the second being instant calibration. They both achieve the
@@ -657,13 +663,13 @@
         
         <h4 class="mt-30"><span lang=EN-US>On the fly calibration:</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>On the fly calibration is meant as a form
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>On the fly calibration is meant as a form
         of calibration where the data comes in a stream, such as when analyzing a live
         video feed. It's the main type of calibration that is used in the program as it
         is the calibration method used by the backend (see backend section) of the test
         server.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><span
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><span
          >&nbsp;</span>In code, you would call the startCalibration
         function to begin calibration, which will reset the array of calibration
         objects and set the calibration state to false. Then while the calibration
@@ -672,31 +678,31 @@
         time until it reaches the required calibration count and finalizes calibration
         by calling calibrateFace.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_19" o:spid="_x0000_i1042" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:298.5pt;height:120.75pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image027.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=398 height=161
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=398 height=161
         src="Implementation_files/image028.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_19"> </span></p>
         
         <h4 class="mt-30"><span lang=EN-US>instant calibration:</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Instant calibration is much simpler and just
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Instant calibration is much simpler and just
         involves taking a face landmark list as an argument and assigning it to the
         calibration objects array. Then the calibrateFace function is called </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_18" o:spid="_x0000_i1041" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:279.75pt;height:62.25pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image029.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=373 height=83
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=373 height=83
         src="Implementation_files/image030.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_18"> </span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Finalizing calibration and computing thresholds</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Once the calibration objects array has been
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Once the calibration objects array has been
         filled with the relevant face landmarks, the calibrateFace function creates a
         new FaceData object using the contents of the array and assigns it as the calibrated
         face. Additionally, the setTresholds function is called which computes the lip
@@ -705,28 +711,28 @@
         representing the size of the face, the sensitivity which's modifiable by the
         user, and the base sensitivity scalar which's modifiable in the config file.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_23" o:spid="_x0000_i1040" type="#_x0000_t75" style='width:468pt;
          height:89.25pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image031.png" o:title=""/>
-        </v:shape><![endif]--><![if !vml]><img width=624 height=119
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=624 height=119
         src="Implementation_files/image032.png" v:shapes="Picture_x0020_23"> </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>To update the sensitivity the
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>To update the sensitivity the
         updateSensitivity function can be called which will modify the sensitivity
         values and recalculate the thresholds if there exists a calibrated face</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_24" o:spid="_x0000_i1039" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:400.5pt;height:63.75pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image033.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=534 height=85
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=534 height=85
         src="Implementation_files/image034.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_24"> </span></p>
         
         <h3 class="mt-30"><span lang=EN-US>Comparing offsets:</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>To compare the offsets between two faces we
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>To compare the offsets between two faces we
         first need to account for the scale difference between the faces, as a face's
         offset is proportional to it's size. Using the scale difference we can then
         make a scaled comparison between two offsets and allow us to calculate the
@@ -734,65 +740,65 @@
         
         <h4 class="mt-30"><span lang=EN-US>Scale difference and comparison</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The calcScaleDifference calculates the
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The calcScaleDifference calculates the
         scale difference between the current face and the calibrated face by dividing
         the calibrated face's chin mean distance with the current face's, this gives
         the value that we should multiply with the offset of the current face to
         calculate the scaled comparison. We must take the absolute value of the result
         of the scaled comparison calculation to ensure that the value is positive.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_25" o:spid="_x0000_i1038" type="#_x0000_t75" style='width:444pt;
          height:62.25pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image035.png" o:title=""/>
-        </v:shape><![endif]--><![if !vml]><img width=592 height=83
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=592 height=83
         src="Implementation_files/image036.png" v:shapes="Picture_x0020_25"> </span><span
         lang=EN-US><span  >&nbsp;</span></span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Getting offset difference</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>To get the left lip and right lip offsets
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>To get the left lip and right lip offsets
         we calculate the sum of their individual x and y offsets by plugging in the
         correct arguments into the scaled comparison function, and similarly for the
         eyebrow offset we calculate the sum of both their y offsets. </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_26" o:spid="_x0000_i1037" type="#_x0000_t75" alt="Graphical user interface&#10;&#10;Description automatically generated"
          style='width:468pt;height:127.5pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image037.png" o:title="Graphical user interface&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=624 height=170
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=624 height=170
         src="Implementation_files/image038.png"
         alt="Graphical user interface&#10;&#10;Description automatically generated"
         v:shapes="Picture_x0020_26"> </span></p>
         
         <h3 class="mt-30"><span lang=EN-US>Determining itch location:</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Once we've calculated the left lip offset,
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Once we've calculated the left lip offset,
         right lip offset, and eyebrow offset, we can plug in the values into the
         findItchLocation function to determine the itch location. </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_27" o:spid="_x0000_i1036" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:381pt;height:178.5pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image039.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=508 height=238
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=508 height=238
         src="Implementation_files/image040.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_27"> </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>To more easily understand what's happening
-        the function, here's a flow chart that explains the process:<span
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>To more easily understand what's happening
+        the function, here's a flow chart that explains the process:</p><p class="  font-20px line-height-40 text-center"><span lang=EN-US></span><span
         style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_28"
          o:spid="_x0000_i1035" type="#_x0000_t75" style='width:468pt;height:273pt;
          visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image041.png" o:title=""/>
-        </v:shape><![endif]--><![if !vml]><img width=624 height=364
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=624 height=364
         src="Implementation_files/image042.png" v:shapes="Picture_x0020_28"> </span></span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
         <h3 class="mt-30"><span lang=EN-US>ItchData structure:</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>When wanting to detect an itch you would
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>When wanting to detect an itch you would
         call the ItchDetection class's detectItch function which takes in a face
         landmark as an argument and returns a dictionary containing a lot of useful
         data which we call itchData. The detectItch function is in charge of creating
@@ -802,11 +808,11 @@
         dictionary to allow for straight forward JSON serialization as this data will
         be the API response that will be sent to the frontend.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_1" o:spid="_x0000_i1034" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:468pt;height:316.5pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image043.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=624 height=422
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=624 height=422
         src="Implementation_files/image044.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_1"> </span></p>
         </div>
@@ -818,57 +824,58 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
-         <h1 class="text-center "><span lang=EN-US>Backend</span></h1>
-        
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The backend is built using flask and is
+              <div class="section-title">
+         <h1 class="text-center" style="margin-bottom: 70px;"><span lang=EN-US>Backend</span></h1>
+        </div>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The backend is built using flask and is
         comprised of only one page and several API endpoints for using the itch
         detection algorithm.</span></p>
         
         <h3 class="mt-30"><span lang=EN-US>Explanation of API endpoints</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>There are three API endpoints are for
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>There are three API endpoints are for
         starting calibration, updating sensitivity, and detecting an itch.</span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Starting calibration:</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The starting calibration endpoint is very
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The starting calibration endpoint is very
         simple, it just calls the startCalibration function of ItchDetection to begin
         on the fly calibration. it's URL route is "/api/calibrate", accepts a POST
         request, and doesn't require any additional data in the body.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_30" o:spid="_x0000_i1033" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:282.75pt;height:52.5pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image045.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=377 height=70
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=377 height=70
         src="Implementation_files/image046.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_30"> </span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Updating sensitivity:</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The update sensitivity endpoint has URL
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The update sensitivity endpoint has URL
         route "/api/update_sensitivity", accepts a POST request, and expects two float
         values lip_sensitivity and eyebrow_sensitivity in <span class=GramE>it's</span>
         body. The function attempts to parse the sensitivity values to float values,
         and returns an error if it fails, otherwise it will call the updateSensitivity
         function of the ItchDetection class with the sensitivities as arguments.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_31" o:spid="_x0000_i1032" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:377.25pt;height:126pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image047.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=503 height=168
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=503 height=168
         src="Implementation_files/image048.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_31"> </span></p>
         
         <h4 class="mt-30"><span lang=EN-US>Detecting an itch:</span></h4>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The detect itch endpoint has URL route
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The detect itch endpoint has URL route
         "/api/detect", accepts a POST request, and expects a base64 string value "image"
         representing a .png or .jpg image converted to a base 64 string in <span
         class=SpellE>it's</span> body. </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The function starts by converting the image
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The function starts by converting the image
         to bytes, then calling the get_landmarks function (see next section) with the image
         in bytes as an argument. If no face landmark is found on the image, a no face
         detected response is returned. Alternatively, if the ItchDetection algorithm
@@ -876,25 +883,25 @@
         on the fly calibration. Otherwise, the detectItch function in the ItchDetection
         class is called and the ItchData is returned.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_35" o:spid="_x0000_i1031" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:315.75pt;height:204pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image049.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=421 height=272
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=421 height=272
         src="Implementation_files/image050.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_35"> </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_34" o:spid="_x0000_i1030" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:183.75pt;height:30.75pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image051.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=245 height=41
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=245 height=41
         src="Implementation_files/image052.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_34"> </span></p>
         
         <h3 class="mt-30"><span lang=EN-US>Getting landmark from image:</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The get_landmarks function takes in <span
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The get_landmarks function takes in <span
         class=GramE>a</span> image in bytes as a parameter, and returns a face landmark.
         Firstly, a Pillow image is created from the byte image. The image is then
         converted to RGB format and placed into a NumPy array, this step is crucial as
@@ -907,11 +914,11 @@
         return one set of face landmarks as the algorithm is meant to only analyse one
         person at a time.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_37" o:spid="_x0000_i1029" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:417.75pt;height:128.25pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image053.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=557 height=171
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=557 height=171
         src="Implementation_files/image054.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_37"> </span></p>
       </div>
@@ -920,52 +927,53 @@
       </section>
 
         <section id = "frontend" style="background-color:rgb(247, 247, 247);">
-          
-         <h1 class="text-center "><span lang=EN-US>Frontend</span></h1>
+          <div class="section-title">
+         <h1 class="text-center" style="margin-bottom: 70px;"><span lang=EN-US>Frontend</span></h1>
+        </div>
          <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>The frontend is built using HTML, CSS, and
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The frontend is built using HTML, CSS, and
         JavaScript. There is only one simple page which displays the webcam capture, a
         few buttons and textboxes for calling the calibration and updating sensitivity,
         and text for displaying the ItchData output from the Itch Detection algorithm. Note:
         the HTML page also contains a hidden canvas that will serve as a way for us to
         capture a frame of the video player.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_38" o:spid="_x0000_i1028" type="#_x0000_t75" alt="A screenshot of a child&#10;&#10;Description automatically generated with medium confidence"
          style='width:468pt;height:246.75pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image055.png" o:title="A screenshot of a child&#10;&#10;Description automatically generated with medium confidence"/>
-        </v:shape><![endif]--><![if !vml]><img width=624 height=329
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=624 height=329
         src="Implementation_files/image056.png"
         alt="A screenshot of a child&#10;&#10;Description automatically generated with medium confidence"
         v:shapes="Picture_x0020_38"> </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
         <h3 class="mt-30"><span lang=EN-US>Initializing the webcam </span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>To initialize the webcam video feed we
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>To initialize the webcam video feed we
         start by getting a reference to the html video player, as well as the canvas
         and it's context which we will need later. Secondly, we check if the navigator.mediaDevices.getUserMedia
         is an available function on the current browser, if so we request permission
         from the user to access their video camera which we set as the source of the
         video.</span></p>
         
-        <h3 class="mt-30"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_42"
+        <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_42"
          o:spid="_x0000_i1027" type="#_x0000_t75" alt="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"
          style='width:291pt;height:146.25pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image057.png" o:title="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"/>
-        </v:shape><![endif]--><![if !vml]><img width=388 height=195
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=388 height=195
         src="Implementation_files/image058.png"
         alt="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"
-        v:shapes="Picture_x0020_42"> </span></h3>
+        v:shapes="Picture_x0020_42"> </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
         
         <h3 class="mt-30"><span lang=EN-US>capturing frames</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>To capture the frames from the video, we
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>To capture the frames from the video, we
         start by adding an event listener to the HTML video object which will detect
         when the video starts playing and will call an anonymous function. The
         anonymous function checks if the video player is uninterrupted and will draw
@@ -974,22 +982,22 @@
         a timeout for the function to call itself after a some milliseconds, thus
         creating a constant loop (that only ends when the video player is interrupted).</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_41" o:spid="_x0000_i1026" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:300pt;height:111pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image059.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=400 height=148
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=400 height=148
         src="Implementation_files/image060.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_41"> </span></p>
         
         <h3 class="mt-30"><span lang=EN-US>Encoding and sending itch detection image</span></h3>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>Once we've captured the video frame and
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Once we've captured the video frame and
         drawn it onto the canvas, the detectItch function is called. This function's
         purpose is to encode the canvas' image as a base 64 string and send a POST
         request to the "/api/detect" endpoint of the server. </span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US>In code, we create a base 64 encoded image data
+         <p class="  font-20px line-height-40 text-left"><span lang=EN-US>In code, we create a base 64 encoded image data
         URL for the current image on the canvas, we then extract the base 64 encoded
         image from the data URL by removing the URL prefix. Afterwards, a POST request
         for the "/api/detect" endpoint of the server is made inside a try block,
@@ -998,11 +1006,11 @@
         otherwise if there is an error, we update the display text with an error message
         instead.</span></p>
         
-        <p class="mt-30  font-20px line-height-40 text-left"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+         <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
          id="Picture_x0020_44" o:spid="_x0000_i1025" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
          style='width:336.75pt;height:209.25pt;visibility:visible;mso-wrap-style:square'>
          <v:imagedata src="Implementation_files/image061.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=449 height=279
+        </v:shape><![endif]--><![if !vml]><img style="display:inline-block;vertical-align:middle;" width=449 height=279
         src="Implementation_files/image062.png"
         alt="Text&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_44"> </span></p>
       </div>
@@ -1014,14 +1022,77 @@
  
   <!--=== content End ======-->
 
+  <!--== Footer Start ==-->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12" style="margin-left: 40px;">
+            <div class="widget widget-text">
+              <div class="logo-footer">
+                <a href="index.html"><img class="img-responsive" src="assets/images/logo-white1.png" alt=""></a>
+              </div>
+              <p>This is the website for UCL Year2 2022-2023 COMP0016 Team21: Itchy AI, which introduces a solution for detecting itchness on human's face.</p>
+              <p style="margin-top:10px;">Great thanks to our company partner Avanade and Mr. Fergus Kidd especially.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-3 col-6" style="margin-left: 50px;">
+            <div class="widget widget-links xs-mt-20 xs-mb-20 sm-mt-20 sm-mb-20">
+              <h5 class="widget-title">Quick Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
 
+                <li><a href="requirement.html">Requirement</a></li>
+    
+                <li><a href="research.html">Research</a></li>
+    
+                <li><a href="design.html">Design</a></li>
+    
+                <!--<li class="dropdown"><a href="http://www.itchaireport.wordpress.com" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>-->
+            </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="widget widget-links xs-mt-20 xs-mb-20 sm-mt-20 sm-mb-20">
+              <h5 class="widget-title"><br></h5>
+              <ul>
+                <li><a href="implementation.html">Impl.</a></li>
+    
+                <li><a href="testing.html">Testing</a></li>
+    
+                <li><a href="evaluation.html">Evaluation</a></li>
+    
+                <li><a href="appendices.html">Appendices</a></li>
+    
+                <!--<li class="dropdown"><a href="http://www.itchaireport.wordpress.com" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>-->
+            </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-4" >
+              <h5 class="widget-title">Supporters</h5>
+
+              <a href="http://www.ucl.ac.uk"><img  src="assets/images/gallery/University-College-London-UCL2.png" alt="" width="80%"></a>
+              <a href="http://www.avanade.com"><img  src="assets/images/gallery/avanade.png" alt="" width="80%" style="margin-top: 30px;"></a>
+        
+          </div>
+          <div class="row">
+            <div class="col-md-12" style="margin-top:30px;" >
+              <div class="copy-right text-center">&#169; 2023 All rights reserved</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--== Footer End ==-->
 
 </div>
 
 <style>
-  img{
-    vertical-align: center;
-  }
+ 
 </style>
 <!--== Javascript Plugins ==-->
 <!--<script src="http://www.google.cn/maps/api/js?key=AIzaSyDJNGOwO2hJpJ9kz8e0UUPjZhEbgDJTTXE"></script>-->
