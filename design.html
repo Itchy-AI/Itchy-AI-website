@@ -32,24 +32,12 @@
 
   <!--== Header Start ==-->
   <nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full no-border">
-  	<!--== Start Top Search ==-->
-    <div class="fullscreen-search-overlay" id="search-overlay"> <a href="#" class="fullscreen-close" id="fullscreen-close-button"><i class="icofont icofont-close"></i></a>
-      <div id="fullscreen-search-wrapper">
-        <form method="get" id="fullscreen-searchform">
-          <input type="text" value="" placeholder="Type and hit Enter..." id="fullscreen-search-input" class="search-bar-top">
-          <i class="fullscreen-search-icon icofont icofont-search">
-          <input value="" type="submit">
-          </i>
-        </form>
-      </div>
-    </div>
-    <!--== End Top Search ==-->
     <div class="container">
       <!--== Start Atribute Navigation ==-->
       <div class="attr-nav hidden-xs sm-display-none">
         <ul>
-          <li class="side-menu"><a href="#"><i class="icofont icofont-navigation-menu"></i></a></li>
-          <li class="search"><a href="#" id="search-button"><i class="icofont icofont-search"></i></a></li>
+          <li><a href="https://github.com/Itchy-AI/Itchy-AI"><i class="icofont icofont-social-github"></i></a></li>
+          <li><a href="assets/development manual.pdf"><i class="icofont icofont-support-faq"></i></a></li>
         </ul>
       </div>
       <!--== End Atribute Navigation ==-->
@@ -57,36 +45,85 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="home.html"> <img class="logo logo-display" src="assets/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="assets/images/logo-black.png" alt=""> </a> </div>
+        <div class="logo"> <a href="index.html"> <img class="logo logo-display" src="assets/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="assets/images/logo-black.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
       <!--== Collect the nav links, forms, and other content for toggling ==-->
       <div class="collapse navbar-collapse" id="navbar-menu">
-        <ul class="nav navbar-nav navbar-center">
+        <ul class="nav navbar-nav navbar-center" data-in="fadeIn" data-out="fadeOut">
             <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                 <ul class="dropdown-menu">
                     <li><a class="page-scroll" href="index.html#home">Introduction</a></li>
-                    <li><a class="page-scroll" href="index.html#background">Background</a></li>
-                    <li><a class="page-scroll" href="index.html#portfolio">Features</a></li>
-                    <li><a class="page-scroll" href="index.html#about">Video</a></li>
+                    <li><a class="page-scroll" href="index.html#abstract">Abstract</a></li>
+                    <li><a class="page-scroll" href="index.html#introV">Intro-Video</a></li>
                     <li><a class="page-scroll" href="index.html#team">Team Members</a></li>
+                    <li><a class="page-scroll" href="index.html#gantt">Project Management</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a></li>
+            <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="requirement.html#background">Project Background & Partner</a></li>
+                <li><a class="page-scroll" href="requirement.html#goal">Project Goal</a></li>
+                <li><a class="page-scroll" href="requirement.html#gathering">Requirement Gathering</a></li>
+                <li><a class="page-scroll" href="requirement.html#personas">Personas​</a></li>
+                <li><a class="page-scroll" href="requirement.html#casediagram">Use Cases</a></li>
+                <li><a class="page-scroll" href="requirement.html#moscow">MoSCoW List</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a></li>
+            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="research.html#other">Reviews on the other Project</a></li>
+                <li><a class="page-scroll" href="research.html#mechanism">Itch mechanism</a></li>
+                <li><a class="page-scroll" href="research.html#motion">Tech Review (Motion Magnification)​</a></li>
+                <li><a class="page-scroll" href="research.html#respiration">Review on respiration detection</a></li>
+                <li><a class="page-scroll" href="research.html#possibility">Possible devices</a></li>
+                <li><a class="page-scroll" href="research.html#choice">Algorithms and programming related choices​</a></li>
+                <li><a class="page-scroll" href="research.html#overall">Overall Conclusion​</a></li>
+                <li><a class="page-scroll" href="research.html#decision">Technical Decisions</a></li>
+                <li><a class="page-scroll" href="research.html#reference">References</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a></li>
+            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="#architecture">System Architecture</a></li>
+                <li><a class="page-scroll" href="#classdiagram">Class Diagram</a></li>
+                <li><a class="page-scroll" href="#sequencediagram">Sequence Diagram</a></li>
+                <li><a class="page-scroll" href="#api">APIs</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a></li>
+            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="implementation.html#technologies">Technologies</a></li>
+                <li><a class="page-scroll" href="implementation.html#algorithms">Itch detection Algorithm</a></li>
+                <li><a class="page-scroll" href="implementation.html#backend">Backend</a></li>
+                <li><a class="page-scroll" href="implementation.html#frontend">Frontend</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a></li>
+            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="testing.html#strategy">Testing Strategy </a></li>
+                <li><a class="page-scroll" href="testing.html#unit">Unit Test</a></li>
+                <li><a class="page-scroll" href="testing.html#integration">Integration Test</a></li>
+                <li><a class="page-scroll" href="testing.html#user">User Acceptance Testing</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a></li>
+            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="evaluation.html#moscow">MoSCoW List Achievement</a></li>
+                <li><a class="page-scroll" href="evaluation.html#individual">Individual Contribution</a></li>
+                <li><a class="page-scroll" href="evaluation.html#critical">Critical Evaluation</a></li>
+                <li><a class="page-scroll" href="evaluation.html#bug">Bug List</a></li>
+                <li><a class="page-scroll" href="evaluation.html#future">Future Work</a></li>
+              </ul>
+            </li>
 
             <li class="dropdown"><a href="appendices.html" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>
-
         </ul>
       </div>
       <!--== /.navbar-collapse ==-->
@@ -102,7 +139,7 @@
         <div class="col-md-10 text-left parallax-content height-100px centerize-col">
           <div class="center-layout">
                 <div class="v-align-middle">
-                    <h1 class="font-700 white-color xs-font-30px font-70px" >Design</h1>
+                    <h1 class="font-700 white-color xs-font-30px font-70px">Design</h1>
                 </div>
               </div>
         </div>
@@ -111,46 +148,231 @@
   </section>
   <!-- Main title end -->
 
-  <!--=== BG Start ======-->
-  <section class="lg-section white-bg all-padding-70" id="about">
+ <!-- content start -->
 
-    <div class="container-fluid">
-      <div class="col-md-8 col-sm-7 col-md-offset-2 col-sm-offset-3 ">
+ 
+  
+  
+        <div class=WordSection1>
+          <section id = "architecture" style="background-color:rgb(255, 255, 255);">
+            <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 " style="margin-top: 20px;">
+            <div class="section-title" style="margin-bottom: 70px;"><h1 class="text-center ">System architecture</h1></div>
+          
+          <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+          
+          <p class="  font-20px line-height-40 text-center" style="margin-bottom: 50px;"><span lang=EN-US style='mso-no-proof:yes'><![if !vml]><img width=748 height=253
+          src="system%20design_files/image002.png"
+          alt="Timeline&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_4"><![endif]></span></p>
+          
+          <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The Itchy AI web application system
+          architecture is very minimal, only having two components directly relating to
+          the web application: the webpage in the frontend and the web server in the
+          frontend. The computer will send its webcam image to the webpage which will
+          encode it and call the webserver’s API and receive the itch data back which
+          will be displayed on the webpage for the user to see. </span></p>
+          
+          <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+          </section>
+    
+          <section id = "classdiagram" style="background-color:rgb(247, 247, 247);">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40" style="margin-top: 20px;">
+            <div class="section-title" style="margin-bottom: 70px;"><h1 class="text-center ">Class diagram</h1></div>
+          
+          <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Below is the class diagram of the itch
+          detection classes as well as the webapp backend server (Server) as well as the
+          python app class (<span class=SpellE>videoCapture</span>)</span></p>
+          
+          <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+           id="Picture_x0020_2" o:spid="_x0000_i1026" type="#_x0000_t75" alt="A picture containing timeline&#10;&#10;Description automatically generated"
+           style='width:467.25pt;height:513pt;visibility:visible;mso-wrap-style:square'>
+           <v:imagedata src="system%20design_files/image003.png" o:title="A picture containing timeline&#10;&#10;Description automatically generated"/>
+          </v:shape><![endif]--><![if !vml]><img width=623 height=684
+          src="system%20design_files/image004.png"
+          alt="A picture containing timeline&#10;&#10;Description automatically generated"
+          v:shapes="Picture_x0020_2"><![endif]></span></p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <h2 class="">Project background and partner introduction </h2>
-        <div class="font-400 font-20px all-padding-30">
-        <p>
+          <section id = "sequencediagram" style="background-color:rgb(255, 255, 255);">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40" style="margin-top: 20px;">
+            <div class="section-title" style="margin-bottom: 70px;"><h1 class="text-center ">Sequence diagram</h1></div>
+          
+          <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Below is the sequence diagram for the itch
+          detection webapp showing the sequence of all user interactions with the webapp</span></p>
+          
+          <p class="  font-20px line-height-40 text-center"><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+           id="Picture_x0020_3" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:467.25pt;
+           height:289.5pt;visibility:visible;mso-wrap-style:square'>
+           <v:imagedata src="system%20design_files/image005.png" o:title=""/>
+          </v:shape><![endif]--><![if !vml]><img width=623 height=386
+          src="system%20design_files/image006.png" v:shapes="Picture_x0020_3"><![endif]></span></p>
+          
+          <p class="  font-20px line-height-40 text-left"><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+                </div>
+              </div>
+            </div>
 
-          The need for assistive robotics for people with disabilities has become increasingly apparent in recent years. According to the World Health Organization, around 15% of the world's population lives with some form of disability, and many of these individuals struggle with daily tasks that many of us take for granted. 
+          </section>
+
+          <section id = "api" style="background-color:rgb(247, 247, 247);">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40" style="margin-top: 20px;">
+            <div class="section-title" style="margin-bottom: 70px;"><h1 class="text-center ">API</h1></div>
           
-        </p> 
-        <p> 
+          <p class="  font-20px line-height-40 text-left"><span lang=EN-US>There are three API endpoints that are for:
+          starting calibration, updating sensitivity, and detecting an itch.</span></p>
           
-          People like Henry Evans, who have severe physical disabilities, often require the assistance of caregivers or technology to complete even basic tasks such as scratching an itch. This can be both inconvenient and uncomfortable for the individual, as well as a burden on caregivers who may not always be available to provide assistance. 
+          <h4><span lang=EN-US>Starting calibration:</span></h4>
           
-        </p> 
-        <p>     
+          <p class=MsoListParagraphCxSpFirst ><![if !supportLists]><span
+          lang=EN-US ><span >·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span></span></span><![endif]><span lang=EN-US>URL route: /<span class=SpellE>api</span>/<span
+          class=GramE>calibrate</span></span></p>
           
-          The development of assistive robotics has the potential to significantly improve the quality of life for people with disabilities by providing them with greater independence and the ability to complete tasks on their own. In this project, we aim to take the first step towards this goal by creating a system that can automatically detect when a person has an itch on their face and alert them or a caregiver so that the itch can be addressed. 
+          <p class=MsoListParagraphCxSpLast ><![if !supportLists]><span
+          lang=EN-US ><span >·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span></span></span><![endif]><span lang=EN-US>Request method: POST</span></p>
           
-        </p> 
-        <p>    
+          <h4><span lang=EN-US>Updating sensitivity:</span></h4>
           
-          We will be using a stretch RE1 robot as a platform for this project, but the focus of the project is on the development of the AI system that will enable the robot to identify and respond to itches. By using machine learning algorithms and data collected from people with disabilities, we hope to create a system that is both accurate and reliable. We believe that this project has the potential to make a meaningful impact on the lives of people with disabilities and pave the way for further development of assistive robotics technology. 
+          <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+          lang=EN-US ><span >·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span></span></span><![endif]><span lang=EN-US>URL route: /<span class=SpellE>api</span>/<span
+          class=SpellE>update_sensitivity</span></span></p>
           
-        </p> 
-        <p>    
+          <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+          lang=EN-US ><span >·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span></span></span><![endif]><span lang=EN-US>Request method: POST</span></p>
           
-          As our industrial project partner, Avanade is a global professional services company that provides consulting, technology, and managed services to help organizations unlock the full potential of their digital investments. Founded in 2000 as a joint venture between Microsoft and Accenture, Avanade has a unique blend of technical expertise and business acumen that enables them to deliver innovative solutions for their clients. With a team of over 30,000 professionals in more than 25 countries, they are well-equipped to handle projects of any size and complexity. They services cover a wide range of technologies, including cloud, data analytics, digital experience, and cybersecurity. They pride themselves on their ability to help their clients drive measurable business results and achieve their goals through the effective use of technology. 
+          <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+          lang=EN-US ><span >·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span></span></span><![endif]><span lang=EN-US>Body:</span></p>
           
-        </p> 
-      </div>
+          <p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+          auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+          lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+          >o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+          </span></span></span><![endif]><span class=SpellE><span lang=EN-US>lip_<span
+          class=GramE>sensitivity</span></span></span><span class=GramE><span lang=EN-US>
+          :</span></span><span lang=EN-US> float</span></p>
+          
+          <p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;mso-add-space:auto;
+          text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+          lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+          >o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+          </span></span></span><![endif]><span class=SpellE><span lang=EN-US>eyebrow_<span
+          class=GramE>sensitivity</span></span></span><span class=GramE><span lang=EN-US>
+          :</span></span><span lang=EN-US> float</span></p>
+          
+          <h4><span lang=EN-US>Detecting an itch:</span></h4>
+          
+          <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l1 level1 lfo2'><![if !supportLists]><span
+          lang=EN-US ><span >·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span></span></span><![endif]><span lang=EN-US>URL route: /<span class=SpellE>api</span>/<span
+          class=GramE>detect</span></span></p>
+          
+          <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l1 level1 lfo2'><![if !supportLists]><span
+          lang=EN-US ><span >·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span></span></span><![endif]><span lang=EN-US>Request method: POST</span></p>
+          
+          <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l1 level1 lfo2'><![if !supportLists]><span
+          lang=EN-US ><span >·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span></span></span><![endif]><span lang=EN-US>Body:</span></p>
+          
+          <p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;mso-add-space:auto;
+          text-indent:-18.0pt;mso-list:l1 level2 lfo2'><![if !supportLists]><span
+          lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
+          >o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+          </span></span></span><![endif]><span lang=EN-US>image: string <span
+          class=GramE>( .</span><span class=SpellE>png</span> or .jpg image converted to
+          a base 64 string)</span></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          </div>
       </div>
     </div>
-  </section>
-  <!--=== About Us End ======-->
+  </div>
 
 
+<!-- content end -->
+
+<!--== Footer Start ==-->
+<footer class="footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12" style="margin-left: 40px;">
+          <div class="widget widget-text">
+            <div class="logo-footer">
+              <a href="index.html"><img class="img-responsive" src="assets/images/logo-white1.png" alt=""></a>
+            </div>
+            <p>This is the website for UCL Year2 2022-2023 COMP0016 Team21: Itchy AI, which introduces a solution for detecting itchness on human's face.</p>
+            <p style="margin-top:10px;">Great thanks to our company partner Avanade and Mr. Fergus Kidd especially.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-3 col-6" style="margin-left: 50px;">
+          <div class="widget widget-links xs-mt-20 xs-mb-20 sm-mt-20 sm-mb-20">
+            <h5 class="widget-title">Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+
+              <li><a href="requirement.html">Requirement</a></li>
+  
+              <li><a href="research.html">Research</a></li>
+  
+              <li><a href="design.html">Design</a></li>
+  
+              <!--<li class="dropdown"><a href="http://www.itchaireport.wordpress.com" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>-->
+          </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6">
+          <div class="widget widget-links xs-mt-20 xs-mb-20 sm-mt-20 sm-mb-20">
+            <h5 class="widget-title"><br></h5>
+            <ul>
+              <li><a href="implementation.html">Impl.</a></li>
+  
+              <li><a href="testing.html">Testing</a></li>
+  
+              <li><a href="evaluation.html">Evaluation</a></li>
+  
+              <li><a href="appendices.html">Appendices</a></li>
+  
+              <!--<li class="dropdown"><a href="http://www.itchaireport.wordpress.com" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>-->
+          </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-4" >
+            <h5 class="widget-title">Supporters</h5>
+
+            <a href="http://www.ucl.ac.uk"><img  src="assets/images/gallery/University-College-London-UCL2.png" alt="" width="80%"></a>
+            <a href="http://www.avanade.com"><img  src="assets/images/gallery/avanade.png" alt="" width="80%" style="margin-top: 30px;"></a>
+      
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="margin-top:30px;" >
+            <div class="copy-right text-center"><a href="license.html"><p class="white-color">&#169; 2023 All rights reserved</p></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--== Footer End ==-->  
 
 </div>
 

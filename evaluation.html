@@ -35,42 +35,15 @@
       <nav
         class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full no-border"
       >
-        <!--== Start Top Search ==-->
-        <div class="fullscreen-search-overlay" id="search-overlay">
-          <a href="#" class="fullscreen-close" id="fullscreen-close-button"
-            ><i class="icofont icofont-close"></i
-          ></a>
-          <div id="fullscreen-search-wrapper">
-            <form method="get" id="fullscreen-searchform">
-              <input
-                type="text"
-                value=""
-                placeholder="Type and hit Enter..."
-                id="fullscreen-search-input"
-                class="search-bar-top"
-              />
-              <i class="fullscreen-search-icon icofont icofont-search">
-                <input value="" type="submit" />
-              </i>
-            </form>
-          </div>
-        </div>
-        <!--== End Top Search ==-->
         <div class="container">
           <!--== Start Atribute Navigation ==-->
-          <div class="attr-nav hidden-xs sm-display-none">
-            <ul>
-              <li class="side-menu">
-                <a href="#"><i class="icofont icofont-navigation-menu"></i></a>
-              </li>
-              <li class="search">
-                <a href="#" id="search-button"
-                  ><i class="icofont icofont-search"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <!--== End Atribute Navigation ==-->
+      <div class="attr-nav hidden-xs sm-display-none">
+        <ul>
+          <li><a href="https://github.com/Itchy-AI/Itchy-AI"><i class="icofont icofont-social-github"></i></a></li>
+          <li><a href="assets/development manual.pdf"><i class="icofont icofont-support-faq"></i></a></li>
+        </ul>
+      </div>
+      <!--== End Atribute Navigation ==-->
 
           <!--== Start Header Navigation ==-->
           <div class="navbar-header">
@@ -83,7 +56,7 @@
               <i class="tr-icon ion-android-menu"></i>
             </button>
             <div class="logo">
-              <a href="home.html">
+              <a href="index.html">
                 <img
                   class="logo logo-display"
                   src="assets/images/logo-white.png"
@@ -100,57 +73,83 @@
           <!--== End Header Navigation ==-->
 
           <!--== Collect the nav links, forms, and other content for toggling ==-->
-          <div class="collapse navbar-collapse" id="navbar-menu">
-            <ul class="nav navbar-nav navbar-center">
-              <li class="dropdown">
-                <a
-                  href="index.html"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  >Home</a
-                >
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav navbar-center" data-in="fadeIn" data-out="fadeOut">
+            <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="page-scroll" href="index.html#home"
-                      >Introduction</a
-                    >
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#background"
-                      >Background</a
-                    >
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#portfolio"
-                      >Features</a
-                    >
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#about">Video</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#team"
-                      >Team Members</a
-                    >
-                  </li>
+                    <li><a class="page-scroll" href="index.html#home">Introduction</a></li>
+                    <li><a class="page-scroll" href="index.html#abstract">Abstract</a></li>
+                    <li><a class="page-scroll" href="index.html#introV">Intro-Video</a></li>
+                    <li><a class="page-scroll" href="index.html#team">Team Members</a></li>
+                    <li><a class="page-scroll" href="index.html#gantt">Project Management</a></li>
                 </ul>
-              </li>
-              <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a></li>
+            </li>
+            <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="requirement.html#background">Project Background & Partner</a></li>
+                <li><a class="page-scroll" href="requirement.html#goal">Project Goal</a></li>
+                <li><a class="page-scroll" href="requirement.html#gathering">Requirement Gathering</a></li>
+                <li><a class="page-scroll" href="requirement.html#personas">Personas​</a></li>
+                <li><a class="page-scroll" href="requirement.html#casediagram">Use Cases</a></li>
+                <li><a class="page-scroll" href="requirement.html#moscow">MoSCoW List</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a></li>
+            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="research.html#other">Reviews on the other Project</a></li>
+                <li><a class="page-scroll" href="research.html#mechanism">Itch mechanism</a></li>
+                <li><a class="page-scroll" href="research.html#motion">Tech Review (Motion Magnification)​</a></li>
+                <li><a class="page-scroll" href="research.html#respiration">Review on respiration detection</a></li>
+                <li><a class="page-scroll" href="research.html#possibility">Possible devices</a></li>
+                <li><a class="page-scroll" href="research.html#choice">Algorithms and programming related choices​</a></li>
+                <li><a class="page-scroll" href="research.html#overall">Overall Conclusion​</a></li>
+                <li><a class="page-scroll" href="research.html#decision">Technical Decisions</a></li>
+                <li><a class="page-scroll" href="research.html#reference">References</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a></li>
+            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="design.html#architecture">System Architecture</a></li>
+                <li><a class="page-scroll" href="design.html#classdiagram">Class Diagram</a></li>
+                <li><a class="page-scroll" href="design.html#sequencediagram">Sequence Diagram</a></li>
+                <li><a class="page-scroll" href="design.html#api">APIs</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a></li>
+            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="implementation.html#technologies">Technologies</a></li>
+                <li><a class="page-scroll" href="implementation.html#algorithms">Itch detection Algorithm</a></li>
+                <li><a class="page-scroll" href="implementation.html#backend">Backend</a></li>
+                <li><a class="page-scroll" href="implementation.html#frontend">Frontend</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a></li>
+            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="testing.html#strategy">Testing Strategy </a></li>
+                <li><a class="page-scroll" href="testing.html#unit">Unit Test</a></li>
+                <li><a class="page-scroll" href="testing.html#integration">Integration Test</a></li>
+                <li><a class="page-scroll" href="testing.html#user">User Acceptance Testing</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a></li>
+            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="#moscow">MoSCoW List Achievement</a></li>
+                <li><a class="page-scroll" href="#individual">Individual Contribution</a></li>
+                <li><a class="page-scroll" href="#critical">Critical Evaluation</a></li>
+                <li><a class="page-scroll" href="#bug">Bug List</a></li>
+                <li><a class="page-scroll" href="#future">Future Work</a></li>
+              </ul>
+            </li>
 
             <li class="dropdown"><a href="appendices.html" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>
-            </ul>
-          </div>
-          <!--== /.navbar-collapse ==-->
+        </ul>
+      </div>
+      <!--== /.navbar-collapse ==-->
         </div>
       </nav>
 
@@ -208,9 +207,13 @@
                           <tr><td>6</td><td>The test platform should have the option to show facial landmarks to improve testin</td><td>SHOULD</td><td>✔</td>
                           <tr><td>7</td><td>A web hostable web API to utilise the itch detection algorithm​</td><td>SHOULD</td><td>✔</td>
 
-                          <tr><td>8</td><td>The algorithm could add subscribers/listeners that have various functionalities when an itch is detected:​ A robot could assist with the itch when an itch is detected​</td><td>COULD</td><td>✔</td>
-                          <tr><td>9</td><td>The algorithm could add subscribers/listeners that have various functionalities when an itch is detected: The itch data could be sent to a logging database when an itch is detected</td><td>COULD</td><td>✔</td>
-                          <tr><td>10</td><td>Improvement in light sensitivity issue of face recognition</td><td>COULD</td><td>✔</td>
+                            <tr><td>8</td><td>The algorithm could be working even with head rotation</td><td>COULD</td><td> </td>
+                              <tr><td>9</td><td>Improvement in light sensitivity issue of face recognition</td><td>COULD</td><td>✔</td>
+                                <tr><td>10</td><td>The test platform should have the option to show facial landmarks to improve testing​</td><td>COULD</td><td>✔</td>
+
+                          <tr><td>11</td><td>The algorithm could add subscribers/listeners that have various functionalities when an itch is detected:​ A robot could assist with the itch when an itch is detected​</td><td>WISH</td><td> </td>
+                          <tr><td>11</td><td>The algorithm could add subscribers/listeners that have various functionalities when an itch is detected: The itch data could be sent to a logging database when an itch is detected</td><td>WISH</td><td> </td>
+                          
                           
                           <tr><td colspan="2">Key Functionalities:</td><td colspan="3"><code>100 %</code></td></tr><tr><td colspan="2">Optional Functionalities:</td><td colspan="3"><code>66 %</code></td></tr>
                         </tbody>
@@ -272,6 +275,242 @@
 
       <!-- content end -->
 
+    <!--== Critical Evaluation Start ==-->
+    <section id = "critical" style="background-color:rgb(255, 255, 255);">
+      <div class="section-title" style="margin-bottom: 100px;"><h1 class="text-center ">Critical Evaluation</h1></div>
+    <div class="container">
+      <div class="row tabs-style-01">
+          <div class="col-md-12">
+            <div class="icon-tabs">
+              <!--== Nav tabs ==-->
+              <ul class="nav nav-tabs text-center" role="tablist">
+                <li role="presentation" class="active"><a href="#user" role="tab" data-toggle="tab"><h1>01</h1> User Experience</a></li>
+                <li role="presentation"><a href="#functionality" role="tab" data-toggle="tab"><h1>02</h1> Functionality</a></li>
+                <li role="presentation"><a href="#se" role="tab" data-toggle="tab"><h1>03</h1> Stability-Efficiency</a></li>
+                <li role="presentation"><a href="#compatibility" role="tab" data-toggle="tab"><h1>04</h1> Compatibility</a></li>
+                <li role="presentation"><a href="#maintainability" role="tab" data-toggle="tab"><h1>05</h1> Maintainability</a></li>
+                <li role="presentation"><a href="#project" role="tab" data-toggle="tab"><h1>06</h1> Project Management</a></li>
+              </ul>
+              <!--== Tab panes ==-->
+              <div class="tab-content text-center">
+                <div role="tabpanel" class="tab-pane fade in active" id="user">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="text-left">
+                          <h3 class="font-700">User Experience</h3>
+                          <p class="  font-20px line-height-40 text-left">The aim for our project is to help people's life, especially for itchy on their face. So, user experience is always the first place in our development.</p>
+                          <p class="  font-20px line-height-40 text-left">- The process of using our algorithm is simple, user just need to look at the camera, click the calibration button, then the algorithm will work automatically.</p>
+                          <p class="  font-20px line-height-40 text-left">- All the facial data will directly show to the user, they will easily find out what is happening of the algorithm.</p>
+                          <p class="  font-20px line-height-40 text-left">- A user manual is provided for guiding the user easily get on with the algorithm.</p>
+                          <p class="  font-20px line-height-40 text-left">- Twerk of eyebrows and conner of the lip are friendly to all type of users​</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="functionality">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="text-left">
+                          <h3 class="font-700">Functionality</h3>
+                          <p class="  font-20px line-height-40 text-left">All our work focus on one job, facial itchy detection. Our algorithm only focus on this one function. We made it efficient, logic clear and easy for user to use.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="se">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="text-left">
+                          <h3 class="font-700">Stability-Efficiency</h3>
+                          <p class="  font-20px line-height-40 text-left">Because our algorithm is based on capturing real-time video frames through a camera, the lighting of the user's environment, the distance from the camera, and the angle of deflection of the user's face can have a certain impact on the algorithm's results. In the worst situation, the algorithm won't be able to detect the movement of the face. But most of the situation with good user circumstance, our algorithm works perfectly.</p>
+                          <p class="  font-20px line-height-40 text-left">Setting aside some unstable factors, our algorithm can efficiently and accurately identify indications of human facial itching</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="compatibility">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="text-left">
+                          <h3 class="font-700">Compatibility</h3>
+                          <p class="  font-20px line-height-40 text-left">Our algorithm is efficient and simple, which can be ported for use in various environments, not only for itchy detection, in future. It is the best solution we can think of for human's facial itch detection.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="maintainability">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="text-left">
+                          <h3 class="font-700">Maintainability</h3>
+                          <p class="  font-20px line-height-40 text-left">Our algorithm can be viewed as an entire module that can be ported to various terminals. We can place it on a network server and make it a remote service. It can also be implanted into local devices to expand the functions of intelligent devices to facilitate users' lives.</p>
+                          <p class="  font-20px line-height-40 text-left">This algorithm do not need further cost, all the library and dependencies are open sources. Our algorithm has extremely strong scalability which is easy to develop new features in future.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="project">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="text-left">
+                          <h3 class="font-700">Project Management</h3>
+                          <p class="  font-20px line-height-40 text-left">This project has been well managed. Each of our team members follows their target. All the works are accomplished follow the Gantt chart we made at preparation stage. We set up weekly meeting for tracing the progress of the project. All in all, we did a really good job and finished the requirements from our customer nice and clean.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </section>
+  <!--== Critical Evaluation End ==-->
+
+  <!-- Bug List start -->
+  <section id = "bug" style="background-color:rgb(247, 247, 247);">
+    <div class="section-title" ><h1 class="text-center ">Bug List</h1></div>
+  <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-xl-10">
+    <div class="placeholder2" id="buglist"></div>
+      <br><br>
+      <div class="col-xl-14">
+      <div class="card mg-b-20">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-hover bug-list mb-0 text-md-nowrap">
+              <thead>
+                <tr>
+                  <th>ID</th><th>BUG Description</th><th>Priority</th>
+                </tr>
+              </thead>
+              <tbody>
+                 <tr><td>1</td><td>Facial recognition algorithms will fail when the light conditions are poor.</td><td>Low</td></tr>
+                 <tr><td>2</td><td>Facial recognition algorithms will fail when users keep moving their heads.</td><td>Low</td></tr>
+              </tbody>
+            </table>
+            </div>
+             </div>
+              </div>
+               </div>   <br><br><br>
+    </div>
+  </div>
+  </div>
+  </section>
+  <!-- Bug List end -->
+
+
+  <!-- content start -->
+
+  <section id = "future" style="background-color:rgb(255, 255, 255);">
+    <div class="section-title "><h1 class="text-center ">  Future Work​ </h1></div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+          <p class="mt-30  font-20px line-height-40 text-left">
+            1. Optimizing algorithms or using other more advanced algorithms allows our algorithm to be used under more severe usage conditions, such as insufficient lighting, continuous user movement, and occlusion of the user's face, etc.
+          </p>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+          <p class="mt-30  font-20px line-height-40 text-left">
+            2. Develop more features, not only detecting the itchy on human's face. Upgrade our facial gesture detection algorithm, enable it to recognize more instructions and commands.
+          </p>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+          <p class="mt-30  font-20px line-height-40 text-left">
+            3. Integrate our algorithm into the RE-1 robot to instruct the robot to help hemiplegic patients grasp facial itching more easily.
+          </p>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+          <p class="mt-30  font-20px line-height-40 text-left">
+            4. Deploy the ItchyAI on a network server and turn our algorithm into a service for remote use by the public.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- content end -->
+
+   <!--== Footer Start ==-->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12" style="margin-left: 40px;">
+            <div class="widget widget-text">
+              <div class="logo-footer">
+                <a href="index.html"><img class="img-responsive" src="assets/images/logo-white1.png" alt=""></a>
+              </div>
+              <p>This is the website for UCL Year2 2022-2023 COMP0016 Team21: Itchy AI, which introduces a solution for detecting itchness on human's face.</p>
+              <p style="margin-top:10px;">Great thanks to our company partner Avanade and Mr. Fergus Kidd especially.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-3 col-6" style="margin-left: 50px;">
+            <div class="widget widget-links xs-mt-20 xs-mb-20 sm-mt-20 sm-mb-20">
+              <h5 class="widget-title">Quick Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="requirement.html">Requirement</a></li>
+    
+                <li><a href="research.html">Research</a></li>
+    
+                <li><a href="design.html">Design</a></li>
+    
+                <!--<li class="dropdown"><a href="http://www.itchaireport.wordpress.com" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>-->
+            </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="widget widget-links xs-mt-20 xs-mb-20 sm-mt-20 sm-mb-20">
+              <h5 class="widget-title"><br></h5>
+              <ul>
+                <li><a href="implementation.html">Impl.</a></li>
+    
+                <li><a href="testing.html">Testing</a></li>
+    
+                <li><a href="evaluation.html">Evaluation</a></li>
+    
+                <li><a href="appendices.html">Appendices</a></li>
+    
+                <!--<li class="dropdown"><a href="http://www.itchaireport.wordpress.com" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>-->
+            </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-4" >
+              <h5 class="widget-title">Supporters</h5>
+
+              <a href="http://www.ucl.ac.uk"><img  src="assets/images/gallery/University-College-London-UCL2.png" alt="" width="80%"></a>
+              <a href="http://www.avanade.com"><img  src="assets/images/gallery/avanade.png" alt="" width="80%" style="margin-top: 30px;"></a>
+        
+          </div>
+          <div class="row">
+            <div class="col-md-12" style="margin-top:30px;" >
+              <div class="copy-right text-center"><a href="license.html"><p class="white-color">&#169; 2023 All rights reserved</p></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--== Footer End ==-->
       
     </div>
 

@@ -22,7 +22,7 @@
 <!--== Loader Start ==-->
 <div id="loader-overlay">
   <div class="loader">
-    <img src="assets/images/loader.svg" width="80" alt="">
+    <img style="display:inline-block;vertical-align:middle;" src="assets/images/loader.svg" width="80" alt="">
   </div>
 </div>
 <!--== Loader End ==-->
@@ -32,61 +32,99 @@
 
   <!--== Header Start ==-->
   <nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full no-border">
-  	<!--== Start Top Search ==-->
-    <div class="fullscreen-search-overlay" id="search-overlay"> <a href="#" class="fullscreen-close" id="fullscreen-close-button"><i class="icofont icofont-close"></i></a>
-      <div id="fullscreen-search-wrapper">
-        <form method="get" id="fullscreen-searchform">
-          <input type="text" value="" placeholder="Type and hit Enter..." id="fullscreen-search-input" class="search-bar-top">
-          <i class="fullscreen-search-icon icofont icofont-search">
-          <input value="" type="submit">
-          </i>
-        </form>
-      </div>
-    </div>
-    <!--== End Top Search ==-->
+  	
     <div class="container">
-      <!--== Start Atribute Navigation ==-->
-      <div class="attr-nav hidden-xs sm-display-none">
-        <ul>
-          <li class="side-menu"><a href="#"><i class="icofont icofont-navigation-menu"></i></a></li>
-          <li class="search"><a href="#" id="search-button"><i class="icofont icofont-search"></i></a></li>
-        </ul>
-      </div>
-      <!--== End Atribute Navigation ==-->
+     <!--== Start Atribute Navigation ==-->
+     <div class="attr-nav hidden-xs sm-display-none">
+      <ul>
+        <li><a href="https://github.com/Itchy-AI/Itchy-AI"><i class="icofont icofont-social-github"></i></a></li>
+        <li><a href="assets/development manual.pdf"><i class="icofont icofont-support-faq"></i></a></li>
+      </ul>
+    </div>
+    <!--== End Atribute Navigation ==-->
 
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="home.html"> <img class="logo logo-display" src="assets/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="assets/images/logo-black.png" alt=""> </a> </div>
+        <div class="logo"> <a href="index.html"> <img style="display:inline-block;vertical-align:middle;" class="logo logo-display" src="assets/images/logo-white.png" alt=""> <img style="display:inline-block;vertical-align:middle;" class="logo logo-scrolled" src="assets/images/logo-black.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
       <!--== Collect the nav links, forms, and other content for toggling ==-->
       <div class="collapse navbar-collapse" id="navbar-menu">
-        <ul class="nav navbar-nav navbar-center">
+        <ul class="nav navbar-nav navbar-center" data-in="fadeIn" data-out="fadeOut">
             <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                 <ul class="dropdown-menu">
                     <li><a class="page-scroll" href="index.html#home">Introduction</a></li>
-                    <li><a class="page-scroll" href="index.html#background">Background</a></li>
-                    <li><a class="page-scroll" href="index.html#portfolio">Features</a></li>
-                    <li><a class="page-scroll" href="index.html#about">Video</a></li>
+                    <li><a class="page-scroll" href="index.html#abstract">Abstract</a></li>
+                    <li><a class="page-scroll" href="index.html#introV">Intro-Video</a></li>
                     <li><a class="page-scroll" href="index.html#team">Team Members</a></li>
+                    <li><a class="page-scroll" href="index.html#gantt">Project Management</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a></li>
+            <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="requirement.html#background">Project Background & Partner</a></li>
+                <li><a class="page-scroll" href="requirement.html#goal">Project Goal</a></li>
+                <li><a class="page-scroll" href="requirement.html#gathering">Requirement Gathering</a></li>
+                <li><a class="page-scroll" href="requirement.html#personas">Personas​</a></li>
+                <li><a class="page-scroll" href="requirement.html#casediagram">Use Cases</a></li>
+                <li><a class="page-scroll" href="requirement.html#moscow">MoSCoW List</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a></li>
+            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="research.html#other">Reviews on the other Project</a></li>
+                <li><a class="page-scroll" href="research.html#mechanism">Itch mechanism</a></li>
+                <li><a class="page-scroll" href="research.html#motion">Tech Review (Motion Magnification)​</a></li>
+                <li><a class="page-scroll" href="research.html#respiration">Review on respiration detection</a></li>
+                <li><a class="page-scroll" href="research.html#possibility">Possible devices</a></li>
+                <li><a class="page-scroll" href="research.html#choice">Algorithms and programming related choices​</a></li>
+                <li><a class="page-scroll" href="research.html#overall">Overall Conclusion​</a></li>
+                <li><a class="page-scroll" href="research.html#decision">Technical Decisions</a></li>
+                <li><a class="page-scroll" href="research.html#reference">References</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a></li>
+            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="design.html#architecture">System Architecture</a></li>
+                <li><a class="page-scroll" href="design.html#classdiagram">Class Diagram</a></li>
+                <li><a class="page-scroll" href="design.html#sequencediagram">Sequence Diagram</a></li>
+                <li><a class="page-scroll" href="design.html#api">APIs</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a></li>
+            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="implementation.html#technologies">Technologies</a></li>
+                <li><a class="page-scroll" href="implementation.html#algorithms">Itch detection Algorithm</a></li>
+                <li><a class="page-scroll" href="implementation.html#backend">Backend</a></li>
+                <li><a class="page-scroll" href="implementation.html#frontend">Frontend</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a></li>
+            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="#strategy">Testing Strategy </a></li>
+                <li><a class="page-scroll" href="#unit">Unit Test</a></li>
+                <li><a class="page-scroll" href="#integration">Integration Test</a></li>
+                <li><a class="page-scroll" href="#user">User Acceptance Testing</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a></li>
+            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="evaluation.html#moscow">MoSCoW List Achievement</a></li>
+                <li><a class="page-scroll" href="evaluation.html#individual">Individual Contribution</a></li>
+                <li><a class="page-scroll" href="evaluation.html#critical">Critical Evaluation</a></li>
+                <li><a class="page-scroll" href="evaluation.html#bug">Bug List</a></li>
+                <li><a class="page-scroll" href="evaluation.html#future">Future Work</a></li>
+              </ul>
+            </li>
 
             <li class="dropdown"><a href="appendices.html" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>
-
         </ul>
       </div>
       <!--== /.navbar-collapse ==-->
@@ -112,59 +150,67 @@
   <!-- Main title end -->
 
   <!--=== BG Start ======-->
-  <section class="lg-section white-bg all-padding-70" id="about">
 
-    <div class="container">
       <div class=WordSection1>
-
-        <h1><span lang=EN-US>Testing Strategy</span></h1>
+        <section id = "strategy" style="background-color:rgb(255, 255, 255);">
+          <div class="container">  
+            <div class="row">
+        <div class="section-title">
+              <h1 class="text-center" style="margin-bottom: 30px;  "><span lang=EN-US>Testing Strategy</span></h1>
+        </div>
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>&nbsp;</span></p>
         
-        <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-        
-        <p class=MsoNormal><span lang=EN-US>As this project's primary focus was on the
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>As this project’s primary focus was on the
         itch detection algorithm, the majority of the testing was directed towards ensuring
-        it's functionality. Consequently, we did not divert any resources to setting up
+        it’s functionality. Consequently, we did not divert any resources to setting up
         a test strategy (although still informally tested) for both the python and HTML
-        webcam capture and display systems. Their purpose are for visualizing the
+        webcam capture and display systems. Their purpose is for visualizing the
         algorithm for debugging, testing, and gathering feedback, but not are not core proponent
         to the algorithm and end deliverable. </span></p>
         
-        <p class=MsoNormal><span lang=EN-US>To cover all relevant aspects of the
-        algorithm we've conducted 3 different types of testing: unit testing
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>To cover all relevant aspects of the
+        algorithm we’ve conducted 3 different types of testing: unit testing
         integration testing, and user acceptance testing. </span></p>
         
-        <p class=MsoNormal><span lang=EN-US>The unit testing was the first line of
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The unit testing was the first line of
         testing that was setup during development to ensure that each function created
         was operating as intended and returned the desired results. The unit testing
         focused on testing the ItchDetection and FaceData classes as those were the
         main bulk of the complex logic and the sole proponents to the itch detection
-        algorithm, which's the primary deliverable.</span></p>
+        algorithm, which’s the primary deliverable.</span></p>
         
-        <p class=MsoNormal><span lang=EN-US>The integration testing was dedicated to
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The integration testing was dedicated to
         black box testing, ensuring that given a certain input, the output of the itch
         detection algorithm would consistently return the expected result. A large number
         of images were given to both measure an accuracy value of the algorithm and
         also to measure performance of the algorithm, as for higher quality images
         processing time can get very high. </span></p>
         
-        <p class=MsoNormal><span lang=EN-US>Finally, we conducted user acceptance
+        <p class="  font-20px line-height-40 text-left "><span lang=EN-US>Finally, we conducted user acceptance
         testing to gather feedback from users. As the result is an AI, UI design and
-        user flow is not something we're focused on, rather we will be mainly focusing
+        user flow is not something we’re focused on, rather we will be mainly focusing
         on how accurate the detection feels to the user, and how unaccommodating the constraints
         may feel to the user (lighting, face positioning, minimal movement). </span></p>
-        
-        <h1><span lang=EN-US>Unit Testing</span></h1>
-        
-        <p class=MsoNormal><span lang=EN-US>To perform unit tests we used the built in
+            </div>
+          </div>
+        </section>
+
+        <section id = "unit" style="background-color:rgb(247,247,247);">
+          <div class="container">  
+            <div class="row">
+        <div class="section-title">
+              <h1 class="text-center" style="margin-bottom: 70px; "><span lang=EN-US>Unit Testing</span></h1>
+        </div>
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>To perform unit tests, we used the built in
         python unit test library as it was sufficient for doing the necessary tests.
         Unit testing was run on both the ItchDetection and FaceData classes, by
         inputting certain data and checking if the output matches, note that if the
         output was a float the equality was tested to 8 decimal places due to the
         existence of floating point errors.</span></p>
         
-        <h2><span lang=EN-US>Generating Test data</span></h2>
+        <h2 class="mt-30"><span lang=EN-US>Generating Test data</span></h2>
         
-        <p class=MsoNormal><span lang=EN-US>As running most functions depended on a
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>As running most functions depended on a
         class FaceData object being initialized first, there was a need to generate
         face landmarks data. Given that calculations such as center points and offsets
         needed to be calculated externally to guarantee the authenticity of the unit
@@ -172,178 +218,127 @@
         face landmarks, we needed to make a few optimizations to generating the test
         data to ensure that we did not spend half our time on generating test data.</span></p>
         
-        <p class=MsoNormal><span lang=EN-US>The first optimization was to reduce the
-        amount of coordinates for each landmark. Given the design of the code, this
-        change would not have any effect on the result. However, to make sure that the
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The first optimization was to reduce the number
+        of coordinates for each landmark. Given the design of the code, this change
+        would not have any effect on the result. However, to make sure that the
         calculations such as mean and standard deviation are properly tested, we cannot
-        have too few points either, therefore we constrained ourself to using no less
+        have too few points either, therefore we constrained ourselves to using no less
         than 3 points to represent most of the landmarks. </span></p>
         
-        <p class=MsoNormal><span lang=EN-US>The second optimization was to create
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The second optimization was to create
         functions to customize the data and the expected results. We made two functions,
         one to modify the landmarks by scaling and/or applying an offset, and one to
         modify the expected the data for expected outputs. The code below just
         traverses the dictionary of data and modifies them with a given offset (only if
         it is a coordinate) and multiplies it with a given scalar.</span></p>
         
-        <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
-         id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
-         path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
-         <v:stroke joinstyle="miter"/>
-         <v:formulas>
-          <v:f eqn="if lineDrawn pixelLineWidth 0"/>
-          <v:f eqn="sum @0 1 0"/>
-          <v:f eqn="sum 0 0 @1"/>
-          <v:f eqn="prod @2 1 2"/>
-          <v:f eqn="prod @3 21600 pixelWidth"/>
-          <v:f eqn="prod @3 21600 pixelHeight"/>
-          <v:f eqn="sum @0 0 1"/>
-          <v:f eqn="prod @6 1 2"/>
-          <v:f eqn="prod @7 21600 pixelWidth"/>
-          <v:f eqn="sum @8 21600 0"/>
-          <v:f eqn="prod @7 21600 pixelHeight"/>
-          <v:f eqn="sum @10 21600 0"/>
-         </v:formulas>
-         <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
-         <o:lock v:ext="edit" aspectratio="t"/>
-        </v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1032" type="#_x0000_t75"
-         alt="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"
-         style='width:468pt;height:189.75pt;visibility:visible;mso-wrap-style:square'>
-         <v:imagedata src="testing_files/image001.png" o:title="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"/>
-        </v:shape><![endif]--><![if !vml]><img width=624 height=253
-        src="testing_files/image002.png"
-        alt="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"
-        v:shapes="Picture_x0020_1"> </span></p>
+        <p class="  font-20px line-height-40 text-center"><span lang=EN-US><img style="display:inline-block;vertical-align:middle;" width=624 height=253 id="Picture 1"
+        src="testing_files/image001.png"
+        alt="A screenshot of a computer&#10;&#10;Description automatically generated with medium confidence"></span></p>
         
-        <p class=MsoNormal><span lang=EN-US>An example of modified data is when we
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>An example of modified data is when we
         apply an offset to a face, we expect the centers to move by the same offset as
         well, but we expect the offsets to stay the same as they are relative to the
         face. Using various permutation of these across different data points allows
-        for a large range of test data to be generated</span></p>
+        for a large range of test data to be generated.</span></p>
         
-        <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-         id="Picture_x0020_2" o:spid="_x0000_i1031" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
-         style='width:358.5pt;height:53.25pt;visibility:visible;mso-wrap-style:square'>
-         <v:imagedata src="testing_files/image003.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=478 height=71
-        src="testing_files/image004.png" alt="Text&#10;&#10;Description automatically generated"
-        v:shapes="Picture_x0020_2"> </span></p>
+        <p class="  font-20px line-height-40 text-center"><span lang=EN-US><img style="display:inline-block;vertical-align:middle;" width=478 height=71 id="Picture 2"
+        src="testing_files/image002.png"
+        alt="Text&#10;&#10;Description automatically generated"></span></p>
         
-        <h2><span lang=EN-US>Testing</span></h2>
+        <h2 class="mt-30"><span lang=EN-US>Testing</span></h2>
         
-        <p class=MsoNormal><span lang=EN-US>Once we have access to the data, we just
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Once we have access to the data, we just
         generated two test classes for the ItchDetection and FaceData classes, each
         with their own functions testing groups of functionalities, across the various
         amounts of test data. Overall, we have a total of 8 test cases:</span></p>
         
-        <p class=MsoListParagraphCxSpFirst style='margin-left:38.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level1 lfo1'> <span
-        lang=EN-US  >--<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </span></span></span> <span lang=EN-US>FaceData:</span></p>
+        <p class=MsoListParagraphCxSpFirst style='margin-left:38.3pt;text-indent:-18.0pt'><span
+        lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span></span><span lang=EN-US>FaceData:</span></p>
         
-        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
-        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
-        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span> <span lang=EN-US>Test center points</span></p>
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;text-indent:-18.0pt'><span
+        lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span><span lang=EN-US>Test center points</span></p>
         
-        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
-        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
-        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span> <span lang=EN-US>Test offsets</span></p>
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;text-indent:-18.0pt'><span
+        lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span><span lang=EN-US>Test offsets</span></p>
         
-        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
-        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
-        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span> <span lang=EN-US>Test distance to vector
-        function </span></p>
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;text-indent:-18.0pt'><span
+        lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span><span lang=EN-US>Test distance to vector function </span></p>
         
-        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
-        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
-        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span> <span lang=EN-US>Test angle conversion function</span></p>
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;text-indent:-18.0pt'><span
+        lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span><span lang=EN-US>Test angle conversion function</span></p>
         
-        <p class=MsoListParagraphCxSpMiddle style='margin-left:38.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level1 lfo1'> <span
-        lang=EN-US  >--<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </span></span></span> <span lang=EN-US>ItchDetection:</span></p>
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:38.3pt;text-indent:-18.0pt'><span
+        lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span></span><span lang=EN-US>ItchDetection:</span></p>
         
-        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
-        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
-        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span> <span lang=EN-US>Test scale difference</span></p>
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;text-indent:-18.0pt'><span
+        lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span><span lang=EN-US>Test scale difference</span></p>
         
-        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
-        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
-        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span> <span lang=EN-US>Test itch location</span></p>
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;text-indent:-18.0pt'><span
+        lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span><span lang=EN-US>Test itch location</span></p>
         
-        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;mso-add-space:
-        auto;text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
-        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
-        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span> <span lang=EN-US>Test scaled comparison</span></p>
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:74.3pt;text-indent:-18.0pt'><span
+        lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span><span lang=EN-US>Test scaled comparison</span></p>
         
-        <p class=MsoListParagraphCxSpLast style='margin-left:74.3pt;mso-add-space:auto;
-        text-indent:-18.0pt;mso-list:l0 level2 lfo1'> <span
-        lang=EN-US style='font-family:"Courier New";mso-fareast-font-family:"Courier New"'><span
-        style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-        </span></span></span> <span lang=EN-US>Test sensitivity change</span></p>
+        <p class=MsoListParagraphCxSpLast style='margin-left:74.3pt;text-indent:-18.0pt'><span
+        lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+        </span></span><span lang=EN-US>Test sensitivity change</span></p>
         
-        <p class=MsoNormal><span lang=EN-US>When run in the command line, the following
-        output is given:<span style='mso-no-proof:yes'> <!--[if gte vml 1]><v:shape
-         id="Picture_x0020_5" o:spid="_x0000_i1030" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
-         style='width:468pt;height:62.25pt;visibility:visible;mso-wrap-style:square'>
-         <v:imagedata src="testing_files/image005.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=624 height=83
-        src="testing_files/image006.png" alt="Text&#10;&#10;Description automatically generated"
-        v:shapes="Picture_x0020_5"> </span></span></p>
+        <p class="  font-20px line-height-40 text-left "><span lang=EN-US>When run in the command line, the following
+        output is given:</p><p class="  font-20px line-height-40 text-center"><img style="display:inline-block;vertical-align:middle;" width=624 height=83 id="Picture 5"
+        src="testing_files/image003.png"
+        alt="Text&#10;&#10;Description automatically generated"></span></p>
+            </div>
+          </div>
+        </section>
+
+        <section id = "integration" style="background-color:rgb(255, 255, 255);">
+          <div class="container">  
+            <div class="row">
+        <div class="section-title">
+              <h1 class="text-center" style="margin-bottom: 70px; "><span lang=EN-US>Integration Testing</span></h1>
+        </div>
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>&nbsp;</span></p>
         
-        <h1><span lang=EN-US>Integration Testing</span></h1>
-        
-        <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-        
-        <p class=MsoNormal><span lang=EN-US>The Integration we designed oversees
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The Integration we designed oversees
         testing the functionality, accuracy, and performance speed of the itch
         detection algorithm. This process involves running a set of images through the
         itch detection algorithm and matching them with the expected result.</span></p>
         
-        <h2><span lang=EN-US>Test Data:</span></h2>
+        <h2 class="mt-30"><span lang=EN-US>Test Data:</span></h2>
         
-        <p class=MsoNormal><span lang=EN-US>The image used for the integration testing
-        are arranged in the "test_images" folder (not pushed to the GitHub due to space
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>The image used for the integration testing
+        are arranged in the “test_images” folder (not pushed to the GitHub due to space
         constraints). The folder can then be populated by a series of different test
-        conditions, in the example below the first test scenario is called "User1",
-        which represents a same user in a same environment. </span></p>
+        conditions, in the example below the first test scenario is called “User1”,
+        which represents a same user in a controlled environment. </span></p>
         
-        <p class=MsoNormal><span lang=EN-US>Within the test scenario two folders must
-        be included: "calibration" and "detection", which will contain the images
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Within the test scenario two folders must
+        be included: “calibration” and “detection”, which will contain the images
         relating to user calibration and user itch detection respectively. Within the
-        calibration folder the calibration images can then be added directly.<span
-         >&nbsp; </span>Contrarily, the detection folder still
-        needs additional folders. It needs to be populated by folders with the names
-        respective to the itch locations (itch location names defined in config folder)
-        which the images should match, e.g. for an image where you'd expect the
-        algorithm to detect a bottom left itch, the image should go into the bottom
-        left folder.</span></p>
+        calibration folder the calibration images can then be added directly.&nbsp; Contrarily,
+        the detection folder still needs additional folders. It needs to be populated
+        by folders with the names respective to the itch locations (itch location names
+        defined in config folder) which the images should match, e.g. for an image
+        where you’d expect the algorithm to detect a bottom left itch, the image should
+        go into the bottom left folder.</span></p>
         
-        <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-         id="Picture_x0020_7" o:spid="_x0000_i1029" type="#_x0000_t75" alt="A picture containing text&#10;&#10;Description automatically generated"
-         style='width:179.25pt;height:165pt;visibility:visible;mso-wrap-style:square'>
-         <v:imagedata src="testing_files/image007.png" o:title="A picture containing text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=239 height=220
-        src="testing_files/image008.png"
-        alt="A picture containing text&#10;&#10;Description automatically generated"
-        v:shapes="Picture_x0020_7"> </span></p>
+        <p class="  font-20px line-height-40 text-center"><span lang=EN-US><img style="display:inline-block;vertical-align:middle;" width=239 height=220 id="Picture 7"
+        src="testing_files/image004.png"
+        alt="A picture containing text&#10;&#10;Description automatically generated"></span></p>
         
-        <h2><span lang=EN-US>Testing:</span></h2>
+        <h2 class="mt-30"><span lang=EN-US>Testing:</span></h2>
         
-        <p class=MsoNormal><span lang=EN-US>Upon running the integration test, the test
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Upon running the integration test, the test
         script will go through each user, calibrate the ItchDetection class based on
         the calibration folder. It then calls the detectItch function on each landmark
         generated from the images in the detection folder and cross references the
@@ -353,89 +348,390 @@
         calibration information. The runtime of each test scenario is also logged to
         the output with an average processing time per image given. </span></p>
         
-        <p class=MsoNormal><span lang=EN-US>Example test:</span></p>
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Example test:</span></p>
         
-        <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-         id="Picture_x0020_10" o:spid="_x0000_i1028" type="#_x0000_t75" alt="Text&#10;&#10;Description automatically generated"
-         style='width:327pt;height:189pt;visibility:visible;mso-wrap-style:square'>
-         <v:imagedata src="testing_files/image009.png" o:title="Text&#10;&#10;Description automatically generated"/>
-        </v:shape><![endif]--><![if !vml]><img width=436 height=252
-        src="testing_files/image010.png" alt="Text&#10;&#10;Description automatically generated"
-        v:shapes="Picture_x0020_10"> </span><span lang=EN-US><span
-         >&nbsp;</span></span></p>
+        <p class="  font-20px line-height-40 text-center"><span lang=EN-US><img style="display:inline-block;vertical-align:middle;" width=571 height=350 id="Picture 3"
+        src="testing_files/image005.png"></span><span lang=EN-US>&nbsp;</span></p>
         
-        <h2><span lang=EN-US>Conclusion</span></h2>
+        <h2 class="mt-30"><span lang=EN-US>Conclusion</span></h2>
         
-        <p class=MsoNormal><span lang=EN-US>Through the integration tests we were able
+        <p class="  font-20px line-height-40 text-left "><span lang=EN-US>Through the integration tests we were able
         to learn more about the algorithm. Firstly, calibration accuracy had a large
         impact on the success rates. This may seem obvious at first, but our
-        calibration images were taken to be as still as possible, and despite this
-        there were fluctuations in different lighting environments, which lead to less
-        steady results. Secondly </span></p>
-        
-        <h1><span lang=EN-US>User acceptance testing</span></h1>
-        
-        <p class=MsoNormal><span lang=EN-US>To get further understanding of how the
+        calibration images were taken to be as still as possible, and despite this there
+        were fluctuations in different lighting environments, which lead to less steady
+        results. Secondly, as expected from our implementation, a head &shy;rotation about
+        the z axis (up/down direction) will affect the output, and a head rotation
+        about the x axis (left/right direction) will also affect the results, but if position
+        is maintained throughout and after calibration it will still work but with
+        decreased accuracy, although eyebrow sensitivity may have to be changed to
+        increased (due to decreased perceived y change).</span></p>
+            </div>
+          </div>
+        </section>
+
+        <section id = "user" style="background-color:rgb(247,247,247);">
+          <div class="container">  
+            <div class="row">
+        <div class="section-title">
+              <h1 class="text-center" style="margin-bottom: 70px;  "><span lang=EN-US>User acceptance testing</span></h1>
+        </div>
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>To get further understanding of how the
         itch detection feels when used live, we gathered a group of various testers to
         give us feedback on different aspects of the itch detection algorithm. As the
-        main focus of the project is about the algorithm, we won't be taking feedback
-        on the UI or user flow. </span></p>
+        main focus of the project is about the algorithm, we won’t be taking feedback
+        on the UI or user flow. We also instructed our testers to follow the contains
+        of correct lighting environment and head angles we’ve deduced from our
+        integration tests. </span></p>
         
-        <h2><span lang=EN-US>Testers</span></h2>
+        <h2 class="mt-30"><span lang=EN-US>Testers</span></h2>
         
-        <p class=MsoNormal><span lang=EN-US>For our testers, to get a full extent of
-        the algorithm's effectiveness in a real world settings, we decided to get a
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>For our testers, to get a full extent of
+        the algorithm’s effectiveness in a real world settings, we decided to get a
         diverse mix of individuals which are in different physical conditions, which
         includes a quadriplegic individual, our target user base, as well as an
         individual affected by a less severe physical disability, and finally an
         individual without any physical disability.</span></p>
         
-        <p class=MsoNormal><span lang=EN-US style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-         id="Picture_x0020_12" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:149.25pt;
-         height:149.25pt;visibility:visible;mso-wrap-style:square'>
-         <v:imagedata src="testing_files/image011.jpg" o:title=""/>
-        </v:shape><![endif]--><![if !vml]><img width=199 height=199
-        src="testing_files/image012.jpg" v:shapes="Picture_x0020_12"> <!--[if gte vml 1]><v:shape
-         id="Picture_x0020_13" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:150pt;
-         height:150pt;visibility:visible;mso-wrap-style:square'>
-         <v:imagedata src="testing_files/image013.jpg" o:title=""/>
-        </v:shape><![endif]--><![if !vml]><img width=200 height=200
-        src="testing_files/image013.jpg" v:shapes="Picture_x0020_13"> <!--[if gte vml 1]><v:shape
-         id="Picture_x0020_11" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:153.75pt;
-         height:150pt;visibility:visible;mso-wrap-style:square'>
-         <v:imagedata src="testing_files/image014.jpg" o:title=""/>
-        </v:shape><![endif]--><![if !vml]><img width=205 height=200
-        src="testing_files/image015.jpg" v:shapes="Picture_x0020_11"> </span></p>
+        <p class="  font-20px line-height-40 text-center"><span lang=EN-US><img style="display:inline-block;vertical-align:middle;margin-right: 70px;" width=250 height=250 id="Picture 4"
+        src="testing_files/image006.jpg"
+        alt="Frank Reynolds Descriptive Personality Statistics"><img style="display:inline-block;vertical-align:middle;" width=250
+        height=250 id="Picture 13" src="testing_files/image007.jpg"><img style="display:inline-block;vertical-align:middle; margin-left: 70px;"
+        width=250 height=250 id="Picture 8" src="testing_files/image008.jpg"
+        alt="25+ Best Dennis Reynolds Quotes From 'It's Always Sunny,' Ranked By Fans"></span></p>
         
-        <p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>Frank<span
-        style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-        Diandra<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-        Dennis</span></p>
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Frank is a successful entrepreneur affected
+        by quadriplegia. He is unable to move anything from the neck down due to a
+        spinal injury he got on a business trip to Vietnam. He spends nearly all his
+        time sitting at his ergonomic workspace.</span></p>
         
-        <p class=MsoNormal><span lang=EN-US>Frank is a quadriplegic that's unable to
-        move anything from the neck down due to his injury back in Vietnam. </span></p>
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Diandra is an acting teacher and is slowly
+        recovering from an accident that left her with limited arm mobility. She is
+        still able to touch her face, but it comes with a lot of difficulty. She spends
+        most of her time at home using her computer in her disability friendly setup.</span></p>
         
-        <p class=MsoNormal><span lang=EN-US>Diandra has limited hand mobility, she is
-        still able to touch her face but she finds it harder than most of us, she
-        spends a lot of time sitting down with low movement. </span></p>
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>Dennis is a bartender that spends most of
+        his days out and about. He has no physical disability. In his free time, he
+        often sits down to watch his favorite tv shows or play video games. </span></p>
         
-        <p class=MsoNormal><span lang=EN-US>Dennis is an active bartender, he spends
-        most of his days out and moving around, he has no physical disability but can
-        get quite lazy when he is watching movies or playing video games. </span></p>
+        <h2 class="mt-30"><span lang=EN-US>Test cases</span></h2>
         
-        <p class=MsoNormal><span lang=EN-US>For user acceptance testing we will be
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>For user acceptance testing we will be
         covering the following test cases:</span></p>
         
-        <p class=MsoNormal><span lang=EN-US>Obeying </span></p>
+        <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+        lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span></span><span lang=EN-US>Placing yourself in the proper lighting environment
+        for optimal itch detection.</span></p>
         
-        </div>
+        <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+        lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span></span><span lang=EN-US>Maintaining the correct head angle for optimal
+        itch detection. </span></p>
+        
+        <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+        lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span></span><span lang=EN-US>Triggering the itch detection for all different
+        zones.</span></p>
+        
+        <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US>4.<span
+        style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+        lang=EN-US>Going about your sit down task and don’t try to trigger any itch
+        detection.</span></p>
+        
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>&nbsp;</span></p>
+        
+        <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:14.0pt'>
+  <td width=170 valign=top style='width:127.45pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.0pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:36.0pt;text-align:center;text-indent:-36.0pt;
+  line-height:normal'><span lang=EN-US>Test Case</span></p>
+  </td>
+  <td width=344 valign=top style='width:258.05pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=EN-US>Frank</span></p>
+  </td>
+  <td width=331 valign=top style='width:248.4pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=EN-US>Diandra</span></p>
+  </td>
+  <td width=340 valign=top style='width:9.0cm;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=EN-US>Dennis</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:99.05pt'>
+  <td width=170 valign=top style='width:127.45pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:99.05pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=EN-US>1</span></p>
+  </td>
+  <td width=344 valign=top style='width:258.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:99.05pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>I’m always in the same place, so setting up the lighting
+  environments was just a matter of having my caretaker move my lamp</span></p>
+  </td>
+  <td width=331 valign=top style='width:248.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:99.05pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>It was no issue, my room lighting already obeys the lighting
+  environment and I always work in the same spot</span></p>
+  </td>
+  <td width=340 valign=top style='width:9.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:99.05pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>It was quite frustrating as I do everything on my laptop and have
+  no set spot that I work at, therefore requiring me to always keep that in the
+  back of my mind</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:85.0pt'>
+  <td width=170 valign=top style='width:127.45pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:85.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=EN-US>2</span></p>
+  </td>
+  <td width=344 valign=top style='width:258.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:85.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>It was not a problem as I don’t often move my head and my webcam
+  is already in the right position</span></p>
+  </td>
+  <td width=331 valign=top style='width:248.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:85.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>It could be a bit annoying sometimes because I move my face from
+  time to time, so I need to adjust my webcam.</span></p>
+  </td>
+  <td width=340 valign=top style='width:9.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:85.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>It was quite a hassle as I often have my head in random positions
+  while using my laptop, especially when I watch Netflix on my bed</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:99.75pt'>
+  <td width=170 valign=top style='width:127.45pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:99.75pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=EN-US>3</span></p>
+  </td>
+  <td width=344 valign=top style='width:258.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:99.75pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>It worked wonders, I had no problem with using the itch detection</span></p>
+  </td>
+  <td width=331 valign=top style='width:248.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:99.75pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>It worked mostly well, except that I often had issues with the
+  center and top detection, I believe this may be because of my hair slightly
+  blocking my eyebrows</span></p>
+  </td>
+  <td width=340 valign=top style='width:9.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:99.75pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>It worked well, although I would often have to recalibrate if I
+  changed to a different position as there were dips in accuracy. </span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:99.05pt'>
+  <td width=170 valign=top style='width:127.45pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:99.05pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=EN-US>4</span></p>
+  </td>
+  <td width=344 valign=top style='width:258.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:99.05pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>There was no issue, I could go about my day without it detecting
+  an itch</span></p>
+  </td>
+  <td width=331 valign=top style='width:248.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:99.05pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>Sometimes it would flicker between random itch locations when I
+  moved my head a bit, but it mostly worked well.</span></p>
+  </td>
+  <td width=340 valign=top style='width:9.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:99.05pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>Under normal circumstances it worked to well, but when I would play
+  video games the detection gets finicky, maybe because I make many small
+  movements.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes;height:85.0pt'>
+  <td width=170 valign=top style='width:127.45pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:85.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=EN-US>Additional comments</span></p>
+  </td>
+  <td width=344 valign=top style='width:258.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:85.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>I love the itch detection, it works great. I’d love to have it
+  work in conjunction with my assistive robot, it would make my life much
+  easier</span></p>
+  </td>
+  <td width=331 valign=top style='width:248.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:85.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>I can see myself using this from time to time, <span class=GramE>It</span>
+  works well but I do find myself having a few minor issues with it here and
+  there.</span></p>
+  </td>
+  <td width=340 valign=top style='width:9.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:85.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US>I don’t see myself using this as the constraints feel too limited,
+  and additionally I don’t have much use for it as I can easily itch myself.</span></p>
+  </td>
+ </tr>
+</table>
+        
+        <p class="  font-20px line-height-40 text-left"><span lang=EN-US>&nbsp;</span></p>
+        
+        <h2 class="mt-30"><span lang=EN-US>Conclusion</span></h2>
+        
+        <p class="  font-20px line-height-40 text-left "><span lang=EN-US>Through the user acceptance testing we
+        received a lot of feedback about the itch detection. Firstly, it is most suited
+        with our targeted quadriplegic audience as they find themselves easily adapting
+        to the constraints and having no issue with using it due to their reduced head
+        movement. In comparison, above simply not needing it, people with no physical
+        disability find it difficult to adapt to the constraints due to constant
+        changes in environment. Additionally, the itch detection algorithm’s algorithm has
+        its accuracy impacted by their constant unconscious head movements. A few other
+        useful observations were that it may be difficult for users with long hair to
+        utilize the AI due to their hair blocking the eyebrow detection, and it may
+        also be inconvenient for users that frequently reposition their heads due to
+        the need to recalibrate and maybe reposition their webcam. In conclusion, the
+        user acceptance tests have shown that Itchy AI has not much issues when used by
+        its targeted audience, but its still rough around the edges in some rare cases.</span></p>
+      </div>
     </div>
   </section>
-  <!--=== About Us End ======-->
+        </div>
+    </div>
 
+  
+<!--== Footer Start ==-->
+<footer class="footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12" style="margin-left: 40px;">
+          <div class="widget widget-text">
+            <div class="logo-footer">
+              <a href="index.html"><img class="img-responsive" src="assets/images/logo-white1.png" alt=""></a>
+            </div>
+            <p>This is the website for UCL Year2 2022-2023 COMP0016 Team21: Itchy AI, which introduces a solution for detecting itchness on human's face.</p>
+            <p style="margin-top:10px;">Great thanks to our company partner Avanade and Mr. Fergus Kidd especially.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-3 col-6" style="margin-left: 50px;">
+          <div class="widget widget-links xs-mt-20 xs-mb-20 sm-mt-20 sm-mb-20">
+            <h5 class="widget-title">Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+
+              <li><a href="requirement.html">Requirement</a></li>
+  
+              <li><a href="research.html">Research</a></li>
+  
+              <li><a href="design.html">Design</a></li>
+  
+              <!--<li class="dropdown"><a href="http://www.itchaireport.wordpress.com" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>-->
+          </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6">
+          <div class="widget widget-links xs-mt-20 xs-mb-20 sm-mt-20 sm-mb-20">
+            <h5 class="widget-title"><br></h5>
+            <ul>
+              <li><a href="implementation.html">Impl.</a></li>
+  
+              <li><a href="testing.html">Testing</a></li>
+  
+              <li><a href="evaluation.html">Evaluation</a></li>
+  
+              <li><a href="appendices.html">Appendices</a></li>
+  
+              <!--<li class="dropdown"><a href="http://www.itchaireport.wordpress.com" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>-->
+          </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-4" >
+            <h5 class="widget-title">Supporters</h5>
+
+            <a href="http://www.ucl.ac.uk"><img  src="assets/images/gallery/University-College-London-UCL2.png" alt="" width="80%"></a>
+            <a href="http://www.avanade.com"><img  src="assets/images/gallery/avanade.png" alt="" width="80%" style="margin-top: 30px;"></a>
+      
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="margin-top:30px;" >
+            <div class="copy-right text-center"><a href="license.html"><p class="white-color">&#169; 2023 All rights reserved</p></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--== Footer End ==-->
 
 
 </div>
+
+
 
 <!--== Javascript Plugins ==-->
 <!--<script src="http://www.google.cn/maps/api/js?key=AIzaSyDJNGOwO2hJpJ9kz8e0UUPjZhEbgDJTTXE"></script>-->

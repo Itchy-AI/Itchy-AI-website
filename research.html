@@ -35,42 +35,16 @@
       <nav
         class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full no-border"
       >
-        <!--== Start Top Search ==-->
-        <div class="fullscreen-search-overlay" id="search-overlay">
-          <a href="#" class="fullscreen-close" id="fullscreen-close-button"
-            ><i class="icofont icofont-close"></i
-          ></a>
-          <div id="fullscreen-search-wrapper">
-            <form method="get" id="fullscreen-searchform">
-              <input
-                type="text"
-                value=""
-                placeholder="Type and hit Enter..."
-                id="fullscreen-search-input"
-                class="search-bar-top"
-              />
-              <i class="fullscreen-search-icon icofont icofont-search">
-                <input value="" type="submit" />
-              </i>
-            </form>
-          </div>
-        </div>
-        <!--== End Top Search ==-->
+        
         <div class="container">
           <!--== Start Atribute Navigation ==-->
-          <div class="attr-nav hidden-xs sm-display-none">
-            <ul>
-              <li class="side-menu">
-                <a href="#"><i class="icofont icofont-navigation-menu"></i></a>
-              </li>
-              <li class="search">
-                <a href="#" id="search-button"
-                  ><i class="icofont icofont-search"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <!--== End Atribute Navigation ==-->
+      <div class="attr-nav hidden-xs sm-display-none">
+        <ul>
+          <li><a href="https://github.com/Itchy-AI/Itchy-AI"><i class="icofont icofont-social-github"></i></a></li>
+          <li><a href="assets/development manual.pdf"><i class="icofont icofont-support-faq"></i></a></li>
+        </ul>
+      </div>
+      <!--== End Atribute Navigation ==-->
 
           <!--== Start Header Navigation ==-->
           <div class="navbar-header">
@@ -83,7 +57,7 @@
               <i class="tr-icon ion-android-menu"></i>
             </button>
             <div class="logo">
-              <a href="home.html">
+              <a href="index.html">
                 <img
                   class="logo logo-display"
                   src="assets/images/logo-white.png"
@@ -100,57 +74,83 @@
           <!--== End Header Navigation ==-->
 
           <!--== Collect the nav links, forms, and other content for toggling ==-->
-          <div class="collapse navbar-collapse" id="navbar-menu">
-            <ul class="nav navbar-nav navbar-center">
-              <li class="dropdown">
-                <a
-                  href="index.html"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  >Home</a
-                >
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav navbar-center" data-in="fadeIn" data-out="fadeOut">
+            <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="page-scroll" href="index.html#home"
-                      >Introduction</a
-                    >
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#background"
-                      >Background</a
-                    >
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#portfolio"
-                      >Features</a
-                    >
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#about">Video</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#team"
-                      >Team Members</a
-                    >
-                  </li>
+                    <li><a class="page-scroll" href="index.html#home">Introduction</a></li>
+                    <li><a class="page-scroll" href="index.html#abstract">Abstract</a></li>
+                    <li><a class="page-scroll" href="index.html#introV">Intro-Video</a></li>
+                    <li><a class="page-scroll" href="index.html#team">Team Members</a></li>
+                    <li><a class="page-scroll" href="index.html#gantt">Project Management</a></li>
                 </ul>
-              </li>
-              <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a></li>
+            </li>
+            <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="requirement.html#background">Project Background & Partner</a></li>
+                <li><a class="page-scroll" href="requirement.html#goal">Project Goal</a></li>
+                <li><a class="page-scroll" href="requirement.html#gathering">Requirement Gathering</a></li>
+                <li><a class="page-scroll" href="requirement.html#personas">Personas​</a></li>
+                <li><a class="page-scroll" href="requirement.html#casediagram">Use Cases</a></li>
+                <li><a class="page-scroll" href="requirement.html#moscow">MoSCoW List</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a></li>
+            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="#other">Reviews on the other Project</a></li>
+                <li><a class="page-scroll" href="#mechanism">Itch mechanism</a></li>
+                <li><a class="page-scroll" href="#motion">Tech Review (Motion Magnification)​</a></li>
+                <li><a class="page-scroll" href="#respiration">Review on respiration detection</a></li>
+                <li><a class="page-scroll" href="#possibility">Possible devices</a></li>
+                <li><a class="page-scroll" href="#choice">Algorithms and programming related choices​</a></li>
+                <li><a class="page-scroll" href="#overall">Overall Conclusion​</a></li>
+                <li><a class="page-scroll" href="#decision">Technical Decisions</a></li>
+                <li><a class="page-scroll" href="#reference">References</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a></li>
+            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="design.html#architecture">System Architecture</a></li>
+                <li><a class="page-scroll" href="design.html#classdiagram">Class Diagram</a></li>
+                <li><a class="page-scroll" href="design.html#sequencediagram">Sequence Diagram</a></li>
+                <li><a class="page-scroll" href="design.html#api">APIs</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a></li>
+            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="implementation.html#technologies">Technologies</a></li>
+                <li><a class="page-scroll" href="implementation.html#algorithms">Itch detection Algorithm</a></li>
+                <li><a class="page-scroll" href="implementation.html#backend">Backend</a></li>
+                <li><a class="page-scroll" href="implementation.html#frontend">Frontend</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a></li>
+            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="testing.html#strategy">Testing Strategy </a></li>
+                <li><a class="page-scroll" href="testing.html#unit">Unit Test</a></li>
+                <li><a class="page-scroll" href="testing.html#integration">Integration Test</a></li>
+                <li><a class="page-scroll" href="testing.html#user">User Acceptance Testing</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a></li>
+            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="evaluation.html#moscow">MoSCoW List Achievement</a></li>
+                <li><a class="page-scroll" href="evaluation.html#individual">Individual Contribution</a></li>
+                <li><a class="page-scroll" href="evaluation.html#critical">Critical Evaluation</a></li>
+                <li><a class="page-scroll" href="evaluation.html#bug">Bug List</a></li>
+                <li><a class="page-scroll" href="evaluation.html#future">Future Work</a></li>
+              </ul>
+            </li>
 
             <li class="dropdown"><a href="appendices.html" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>
-            </ul>
-          </div>
-          <!--== /.navbar-collapse ==-->
+        </ul>
+      </div>
+      <!--== /.navbar-collapse ==-->
         </div>
       </nav>
 
@@ -256,8 +256,9 @@
 
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px text-left default-color font-800">In conclusion</p>
               <p class="mt-30  font-20px line-height-40 text-left">
-                In conclusion, the literature suggests that machine learning may be a promising approach for the management of itch, but more research is needed to fully understand its potential and limitations.
+                The literature suggests that machine learning may be a promising approach for the management of itch, but more research is needed to fully understand its potential and limitations.
                 [4]</p>
               
             </div>
@@ -270,7 +271,246 @@
 
       <!-- content start -->
 
-      <section id = "decision" style="background-color:rgb(255, 255, 255);">
+      <section id = "motion" style="background-color:rgb(255, 255, 255);">
+        <div class="section-title "><h1 class="text-center ">  Tech Review (Motion Magnification)​ </h1></div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                The paper "Learning-based Video Motion Magnification" by Tae-Hyun Oh [5], et al., published at the European Conference on Computer Vision (ECCV) in 2018, presents a novel approach for magnifying subtle motion patterns in videos using deep learning techniques.​
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                The authors propose a method that learns to amplify motion signals in video frames by using a convolutional neural network (CNN) to generate a motion field, which is then applied to the original video frames to produce a motion-magnified output. The proposed method is called "MotionNet," and it is trained on a large dataset of videos with ground truth motion information.​
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                The paper provides a comprehensive review of related work in video motion analysis and motion magnification, including previous approaches that use optical flow estimation and phase-based methods. The authors also discuss the limitations of these previous methods and highlight the advantages of their proposed approach.​
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                The experimental results demonstrate that MotionNet can effectively magnify subtle motion patterns in videos, such as the movement of facial features and the pulse of a human wrist. The authors evaluate the performance of their method on various datasets and compare it to other state-of-the-art techniques. The results show that MotionNet outperforms previous methods in terms of visual quality and computational efficiency.​
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px text-left default-color font-800">In conclusion</p>
+              <p class="mt-30  font-20px line-height-40 text-left">
+                The paper presents a novel method for learning-based video motion magnification that uses deep learning techniques to amplify subtle motion patterns in videos. The proposed approach outperforms previous methods in terms of visual quality and computational efficiency and has the potential to be applied in various domains, such as healthcare and entertainment.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- content end -->
+
+
+      <!-- content start -->
+
+      <section id = "respiration" style="background-color:rgb(247, 247, 247);">
+        <div class="section-title "><h1 class="text-center ">  Review on respiration detection​ </h1></div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                The paper "Deep Learning for Healthcare: Review, Opportunities and Challenges" by Daphne Koller and Niraj R. Chokshi, published in the ACM Digital Library in 2018 [6], provides a literature review of the application of deep learning in healthcare, including respiration detection.​
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                The authors discuss the potential of deep learning in the analysis of physiological signals, including respiration signals. They highlight the challenges associated with traditional methods for respiration detection, such as chest straps and nasal cannulas, and the potential advantages of using deep learning algorithms to analyze signals from non-invasive sensors such as wearable devices.
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                The paper provides a comprehensive review of the existing literature on the application of deep learning in respiration detection, covering a range of topics including the use of convolutional neural networks (CNNs) for signal processing, the detection of apnea and hypopnea in sleep disorders, and the use of deep learning for real-time monitoring of respiration in intensive care units.
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                The authors discuss the advantages and limitations of deep learning in respiration detection, including the ability to analyze large volumes of data and identify patterns that may not be detectable by traditional methods, as well as the need for high-quality data and the potential for bias in training data.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                Finally, the authors identify potential areas for future research in the application of deep learning in respiration detection, including the development of more accurate and robust algorithms for real-time monitoring, the integration of multiple physiological signals, and the exploration of new applications such as the early detection of respiratory diseases.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px text-left default-color font-800">In conclusion</p>
+              <p class="mt-30  font-20px line-height-40 text-left">
+                The paper provides a valuable literature review of the application of deep learning in healthcare, including the detection of respiration. The authors highlight the potential of deep learning in the analysis of physiological signals and identify challenges and opportunities for future research in this area. The paper is a valuable resource for researchers and practitioners in the field of healthcare and machine learning.​
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- content end -->
+
+      <!-- content start -->
+
+      <section id = "possibility" style="background-color:rgb(255, 255, 255);">
+        <div class="section-title "><h1 class="text-center ">  Possible devices​​ </h1></div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                Accelerometer - An accelerometer is a device that measures acceleration forces acting on an object. It can be used to detect changes in motion or orientation of an object in three-dimensional space. The accelerometer works based on the principles of Newton's laws of motion. It is measured by sensors such as piezoelectric, capacitive, or strain-gauge sensors. The sensors then convert the physical movement into an electrical signal that can be processed by a computer or other electronic device. Collecting data can be used for motion magnification deep learning data.​
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                Gyroscope - A gyroscope is a device that measures and maintains orientation and angular velocity. It consists of a spinning wheel or rotor, mounted on a set of gimbals or a solid platform, which is free to rotate in any direction. When the device is rotated or tilted, the rotor experiences a force that causes it to precess, which is the phenomenon of the rotor's axis of rotation moving in a circle. Collecting data can be used with accelerometer for motion magnification deep learning data and for motion detection data.​
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                ​Webcam – is a digital camera that is designed to capture images and videos in real-time and transmit them over the Internet. It is usually connected to a computer via USB or another interface and can be used for a variety of purposes such as video conferencing, live streaming, and recording videos. It can be used to record face of the user to calibrate the facial points.
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                Sensory electrode - A sensory electrode is a type of electrode that is designed to detect and measure biological signals, such as neural activity or muscle activity, in order to provide information about the function of the nervous system. Sensory electrodes are used in a variety of medical applications, including diagnosis, treatment, and research. It can be used to accurately measure electrical neural signal from the body.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px text-left default-color font-800">In conclusion</p>
+              <p class="mt-30  font-20px line-height-40 text-left">
+                We chose webcam as our possible device choice 
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- content end -->
+
+
+      <!-- content start -->
+
+      <section id = "choice" style="background-color:rgb(247, 247, 247);">
+        <div class="section-title "><h1 class="text-center ">  Algorithms and programming related choices​​ </h1></div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                For our project algorithm we had several choices to make such as programming language, library and the algorithms choices.
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                For our programming language, we had two choices in mind, python and C++. Both languages are highly use for AI algorithms. 
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                In the case of C++, this is highly used in ML and AI algorithms as C++ is a compiled language that produces highly efficient code and provides direct memory access and management. This helps in optimizing memory usage for large-scale data processing.
+              </p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                Python has a simpler syntax, which allows for faster development and rapid prototyping. Python has many popular libraries for computer vision. These libraries provide range of features and optimizations.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- content end -->
+
+
+      <!-- content start -->
+
+      <section id = "overall" style="background-color:rgb(255, 255, 255);">
+        <div class="section-title "><h1 class="text-center ">  Overall Conclusion​​​ </h1></div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                Overall, we have concluded that building a system that directly detect an itch is impossible due to technology and possible safety issue. And other similar projects that is going on or made do not share same targeted client. Most of the projects' targeted clients are people who do not have the physical disabilities. However, our clients are people who have disabilities and worst case, they can be suffering from quadriplegia.
+              </p>
+              </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 xs-mb-40">
+              <p class="mt-30  font-20px line-height-40 text-left">
+                We chose Python to implement our project as it is easy to prototype many ideas and try out different algorithms. Python also has many libraries like dlib, numpy and pillow which helps in the facial recognition algorithms. It reduces a lot of time when implementing our idea. Python also has backend language, Flask. These are the reasons we choose Python over C++.​
+              </p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- content end -->
+
+
+      <!-- content start -->
+
+      <section id = "decision" style="background-color:rgb(247, 247, 247);">
         <div class="section-title "><h1 class="text-center ">  Technical Decisions </h1></div>
         
         <div class="container">
@@ -328,7 +568,7 @@
 
       <!-- content start -->
 
-      <section id = "reference" style="background-color:rgb(247, 247, 247);">
+      <section id = "reference" style="background-color:rgb(255, 255, 255);">
         <div class="section-title "><h1 class="text-center grey-color">References</h1></div>
         
         <div class="container">
@@ -357,6 +597,19 @@
                 [4]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081479/
                 </a>
               </p>
+
+              <p>
+                <a class="mt-30  font-20px line-height-40 text-left grey-color" target="_blank" href="https://openaccess.thecvf.com/content_ECCV_2018/html/Tae-Hyun_Oh_Learning-based_Video_Motion_ECCV_2018_paper.html">
+                [5]: https://openaccess.thecvf.com/content_ECCV_2018/html/Tae-Hyun_Oh_Learning-based_Video_Motion_ECCV_2018_paper.html
+                </a>
+              </p>
+
+              <p>
+                <a class="mt-30  font-20px line-height-40 text-left grey-color" target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3161188">
+                [6]: https://dl.acm.org/doi/abs/10.1145/3161188
+                </a>
+              </p>
+
             </div>
           </div>
 
@@ -424,7 +677,7 @@
           </div>
           <div class="row">
             <div class="col-md-12" style="margin-top:30px;" >
-              <div class="copy-right text-center">© 2023 All rights reserved</div>
+              <div class="copy-right text-center"><a href="license.html"><p class="white-color">&#169; 2023 All rights reserved</p></a></div>
             </div>
           </div>
         </div>

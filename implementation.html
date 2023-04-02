@@ -32,24 +32,13 @@
 
   <!--== Header Start ==-->
   <nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full no-border">
-  	<!--== Start Top Search ==-->
-    <div class="fullscreen-search-overlay" id="search-overlay"> <a href="#" class="fullscreen-close" id="fullscreen-close-button"><i class="icofont icofont-close"></i></a>
-      <div id="fullscreen-search-wrapper">
-        <form method="get" id="fullscreen-searchform">
-          <input type="text" value="" placeholder="Type and hit Enter..." id="fullscreen-search-input" class="search-bar-top">
-          <i class="fullscreen-search-icon icofont icofont-search">
-          <input value="" type="submit">
-          </i>
-        </form>
-      </div>
-    </div>
-    <!--== End Top Search ==-->
+  	
     <div class="container">
       <!--== Start Atribute Navigation ==-->
       <div class="attr-nav hidden-xs sm-display-none">
         <ul>
-          <li class="side-menu"><a href="#"><i class="icofont icofont-navigation-menu"></i></a></li>
-          <li class="search"><a href="#" id="search-button"><i class="icofont icofont-search"></i></a></li>
+          <li><a href="https://github.com/Itchy-AI/Itchy-AI"><i class="icofont icofont-social-github"></i></a></li>
+          <li><a href="assets/development manual.pdf"><i class="icofont icofont-support-faq"></i></a></li>
         </ul>
       </div>
       <!--== End Atribute Navigation ==-->
@@ -57,36 +46,85 @@
       <!--== Start Header Navigation ==-->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-        <div class="logo"> <a href="home.html"> <img class="logo logo-display" src="assets/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="assets/images/logo-black.png" alt=""> </a> </div>
+        <div class="logo"> <a href="index.html"> <img class="logo logo-display" src="assets/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="assets/images/logo-black.png" alt=""> </a> </div>
       </div>
       <!--== End Header Navigation ==-->
 
       <!--== Collect the nav links, forms, and other content for toggling ==-->
       <div class="collapse navbar-collapse" id="navbar-menu">
-        <ul class="nav navbar-nav navbar-center">
+        <ul class="nav navbar-nav navbar-center" data-in="fadeIn" data-out="fadeOut">
             <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                 <ul class="dropdown-menu">
                     <li><a class="page-scroll" href="index.html#home">Introduction</a></li>
-                    <li><a class="page-scroll" href="index.html#background">Background</a></li>
-                    <li><a class="page-scroll" href="index.html#portfolio">Features</a></li>
-                    <li><a class="page-scroll" href="index.html#about">Video</a></li>
+                    <li><a class="page-scroll" href="index.html#abstract">Abstract</a></li>
+                    <li><a class="page-scroll" href="index.html#introV">Intro-Video</a></li>
                     <li><a class="page-scroll" href="index.html#team">Team Members</a></li>
+                    <li><a class="page-scroll" href="index.html#gantt">Project Management</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a></li>
+            <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="requirement.html#background">Project Background & Partner</a></li>
+                <li><a class="page-scroll" href="requirement.html#goal">Project Goal</a></li>
+                <li><a class="page-scroll" href="requirement.html#gathering">Requirement Gathering</a></li>
+                <li><a class="page-scroll" href="requirement.html#personas">Personas?</a></li>
+                <li><a class="page-scroll" href="requirement.html#casediagram">Use Cases</a></li>
+                <li><a class="page-scroll" href="requirement.html#moscow">MoSCoW List</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a></li>
+            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="research.html#other">Reviews on the other Project</a></li>
+                <li><a class="page-scroll" href="research.html#mechanism">Itch mechanism</a></li>
+                <li><a class="page-scroll" href="research.html#motion">Tech Review (Motion Magnification)?</a></li>
+                <li><a class="page-scroll" href="research.html#respiration">Review on respiration detection</a></li>
+                <li><a class="page-scroll" href="research.html#possibility">Possible devices</a></li>
+                <li><a class="page-scroll" href="research.html#choice">Algorithms and programming related choices?</a></li>
+                <li><a class="page-scroll" href="research.html#overall">Overall Conclusion?</a></li>
+                <li><a class="page-scroll" href="research.html#decision">Technical Decisions</a></li>
+                <li><a class="page-scroll" href="research.html#reference">References</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a></li>
+            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="design.html#architecture">System Architecture</a></li>
+                <li><a class="page-scroll" href="design.html#classdiagram">Class Diagram</a></li>
+                <li><a class="page-scroll" href="design.html#sequencediagram">Sequence Diagram</a></li>
+                <li><a class="page-scroll" href="design.html#api">APIs</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a></li>
+            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="#technologies">Technologies</a></li>
+                <li><a class="page-scroll" href="#algorithms">Itch detection Algorithm</a></li>
+                <li><a class="page-scroll" href="#backend">Backend</a></li>
+                <li><a class="page-scroll" href="#frontend">Frontend</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a></li>
+            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="testing.html#strategy">Testing Strategy </a></li>
+                <li><a class="page-scroll" href="testing.html#unit">Unit Test</a></li>
+                <li><a class="page-scroll" href="testing.html#integration">Integration Test</a></li>
+                <li><a class="page-scroll" href="testing.html#user">User Acceptance Testing</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a></li>
+            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="evaluation.html#moscow">MoSCoW List Achievement</a></li>
+                <li><a class="page-scroll" href="evaluation.html#individual">Individual Contribution</a></li>
+                <li><a class="page-scroll" href="evaluation.html#critical">Critical Evaluation</a></li>
+                <li><a class="page-scroll" href="evaluation.html#bug">Bug List</a></li>
+                <li><a class="page-scroll" href="evaluation.html#future">Future Work</a></li>
+              </ul>
+            </li>
 
             <li class="dropdown"><a href="appendices.html" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>
-
         </ul>
       </div>
       <!--== /.navbar-collapse ==-->
@@ -145,7 +183,7 @@
                                     <div class="col-md-6 col-sm-6">
                                         <div class="text-left">
                                           <h3 class="font-700">Python</h3>
-                                          <p>Python was used because it's a
+                                          <p class="mt-30  font-20px line-height-40 text-left">Python was used because it's a
                                             popular and powerful language that has a rich ecosystem of libraries for image
                                             processing, facial recognition, and running web applications. In the context of
                                             the program, it was used to create the itch detection algorithm and host the
@@ -162,7 +200,7 @@
                                     <div class="col-md-6 col-sm-6">
                                         <div class="text-left">
                                           <h3 class="font-700">Dlib</h3>
-                                          <p>Dlib is a powerful open-source
+                                          <p class="mt-30  font-20px line-height-40 text-left">Dlib is a powerful open-source
                                             library for machine learning, specifically for object detection and
                                             recognition. It is a good choice for itch detection since it can be used to
                                             detect and localize objects within an image or video stream. In the context of
@@ -180,7 +218,7 @@
                                     <div class="col-md-6 col-sm-6">
                                         <div class="text-left">
                                           <h3 class="font-700">Numpy</h3>
-                                          <p>Numpy is a Python library for
+                                          <p class="mt-30  font-20px line-height-40 text-left">Numpy is a Python library for
                                             scientific computing that provides support for multidimensional arrays and
                                             matrices. It is widely used in machine learning and image processing
                                             applications due to its <span class=GramE>fast processing</span> speeds and
@@ -199,7 +237,7 @@
                                     <div class="col-md-6 col-sm-6">
                                         <div class="text-left">
                                           <h3 class="font-700">Pillow & OpenCV</h3>
-                                          <p>Pillow and OpenCV are both
+                                          <p class="mt-30  font-20px line-height-40 text-left">Pillow and OpenCV are both
                                             Python libraries for image processing and manipulation. Both libraries offer
                                             for varying levels of image manipulation tasks, such as resizing, cropping, and
                                             color adjustment. In the context of the program, they were used to process the
@@ -216,7 +254,7 @@
                                     <div class="col-md-6 col-sm-6">
                                         <div class="text-left">
                                           <h3 class="font-700">Flask</h3>
-                                          <p>Flask is a lightweight web
+                                          <p class="mt-30  font-20px line-height-40 text-left">Flask is a lightweight web
                                             application framework for Python that makes it easy to build web applications
                                             and APIs. It is a good choice for hosting the itch detection algorithm since it
                                             provides a simple and efficient way to expose the algorithm as a web service.</p>
@@ -231,8 +269,8 @@
                                   <div class="row">
                                     <div class="col-md-6 col-sm-6">
                                         <div class="text-left">
-                                          <h3 class="font-700">HTML£¬CSS£¬JavaScript</h3>
-                                          <p>HTML, CSS, and JavaScript are
+                                          <h3 class="font-700">HTML, CSS, JavaScript</h3>
+                                          <p class="mt-30  font-20px line-height-40 text-left">HTML, CSS, and JavaScript are
                                             the core technologies used for building web pages and web applications. HTML
                                             provides the structure and content of the page, CSS provides the styling and
                                             layout, and JavaScript provides the interactive and dynamic behavior. In the
@@ -1080,7 +1118,7 @@
           </div>
           <div class="row">
             <div class="col-md-12" style="margin-top:30px;" >
-              <div class="copy-right text-center">&#169; 2023 All rights reserved</div>
+              <div class="copy-right text-center"><a href="license.html"><p class="white-color">&#169; 2023 All rights reserved</p></a></div>
             </div>
           </div>
         </div>

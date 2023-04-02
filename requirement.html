@@ -35,42 +35,16 @@
       <nav
         class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full no-border"
       >
-        <!--== Start Top Search ==-->
-        <div class="fullscreen-search-overlay" id="search-overlay">
-          <a href="#" class="fullscreen-close" id="fullscreen-close-button"
-            ><i class="icofont icofont-close"></i
-          ></a>
-          <div id="fullscreen-search-wrapper">
-            <form method="get" id="fullscreen-searchform">
-              <input
-                type="text"
-                value=""
-                placeholder="Type and hit Enter..."
-                id="fullscreen-search-input"
-                class="search-bar-top"
-              />
-              <i class="fullscreen-search-icon icofont icofont-search">
-                <input value="" type="submit" />
-              </i>
-            </form>
-          </div>
-        </div>
-        <!--== End Top Search ==-->
+       
         <div class="container">
           <!--== Start Atribute Navigation ==-->
-          <div class="attr-nav hidden-xs sm-display-none">
-            <ul>
-              <li class="side-menu">
-                <a href="#"><i class="icofont icofont-navigation-menu"></i></a>
-              </li>
-              <li class="search">
-                <a href="#" id="search-button"
-                  ><i class="icofont icofont-search"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <!--== End Atribute Navigation ==-->
+      <div class="attr-nav hidden-xs sm-display-none">
+        <ul>
+          <li><a href="https://github.com/Itchy-AI/Itchy-AI"><i class="icofont icofont-social-github"></i></a></li>
+          <li><a href="assets/development manual.pdf"><i class="icofont icofont-support-faq"></i></a></li>
+        </ul>
+      </div>
+      <!--== End Atribute Navigation ==-->
 
           <!--== Start Header Navigation ==-->
           <div class="navbar-header">
@@ -83,7 +57,7 @@
               <i class="tr-icon ion-android-menu"></i>
             </button>
             <div class="logo">
-              <a href="home.html">
+              <a href="index.html">
                 <img
                   class="logo logo-display"
                   src="assets/images/logo-white.png"
@@ -101,55 +75,79 @@
 
       <!--== Collect the nav links, forms, and other content for toggling ==-->
       <div class="collapse navbar-collapse" id="navbar-menu">
-        <ul class="nav navbar-nav navbar-center">
+        <ul class="nav navbar-nav navbar-center" data-in="fadeIn" data-out="fadeOut">
             <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="page-scroll" href="index.html#home"
-                      >Introduction</a
-                    >
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#background"
-                      >Background</a
-                    >
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#portfolio"
-                      >Features</a
-                    >
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#about">Video</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="index.html#team"
-                      >Team Members</a
-                    >
-                  </li>
+                    <li><a class="page-scroll" href="index.html#home">Introduction</a></li>
+                    <li><a class="page-scroll" href="index.html#abstract">Abstract</a></li>
+                    <li><a class="page-scroll" href="index.html#introV">Intro-Video</a></li>
+                    <li><a class="page-scroll" href="index.html#team">Team Members</a></li>
+                    <li><a class="page-scroll" href="index.html#gantt">Project Management</a></li>
                 </ul>
-              </li>
-              <li class="dropdown">
-                <a
-                  href="requirement.html"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  >Requirement</a
-                >
-              </li>
+            </li>
+            <li class="dropdown"><a href="requirement.html" class="dropdown-toggle" data-toggle="dropdown">Requirement</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="#background">Project Background & Partner</a></li>
+                <li><a class="page-scroll" href="#goal">Project Goal</a></li>
+                <li><a class="page-scroll" href="#gathering">Requirement Gathering</a></li>
+                <li><a class="page-scroll" href="#personas">Personas​</a></li>
+                <li><a class="page-scroll" href="#casediagram">Use Cases</a></li>
+                <li><a class="page-scroll" href="#moscow">MoSCoW List</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a></li>
+            <li class="dropdown"><a href="research.html" class="dropdown-toggle" data-toggle="dropdown">Research</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="research.html#other">Reviews on the other Project</a></li>
+                <li><a class="page-scroll" href="research.html#mechanism">Itch mechanism</a></li>
+                <li><a class="page-scroll" href="research.html#motion">Tech Review (Motion Magnification)​</a></li>
+                <li><a class="page-scroll" href="research.html#respiration">Review on respiration detection</a></li>
+                <li><a class="page-scroll" href="research.html#possibility">Possible devices</a></li>
+                <li><a class="page-scroll" href="research.html#choice">Algorithms and programming related choices​</a></li>
+                <li><a class="page-scroll" href="research.html#overall">Overall Conclusion​</a></li>
+                <li><a class="page-scroll" href="research.html#decision">Technical Decisions</a></li>
+                <li><a class="page-scroll" href="research.html#reference">References</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a></li>
+            <li class="dropdown"><a href="design.html" class="dropdown-toggle" data-toggle="dropdown">Design</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="design.html#architecture">System Architecture</a></li>
+                <li><a class="page-scroll" href="design.html#classdiagram">Class Diagram</a></li>
+                <li><a class="page-scroll" href="design.html#sequencediagram">Sequence Diagram</a></li>
+                <li><a class="page-scroll" href="design.html#api">APIs</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a></li>
+            <li class="dropdown"><a href="implementation.html" class="dropdown-toggle" data-toggle="dropdown">Impl.</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="implementation.html#technologies">Technologies</a></li>
+                <li><a class="page-scroll" href="implementation.html#algorithms">Itch detection Algorithm</a></li>
+                <li><a class="page-scroll" href="implementation.html#backend">Backend</a></li>
+                <li><a class="page-scroll" href="implementation.html#frontend">Frontend</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a></li>
+            <li class="dropdown"><a href="testing.html" class="dropdown-toggle" data-toggle="dropdown">Testing</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="testing.html#strategy">Testing Strategy </a></li>
+                <li><a class="page-scroll" href="testing.html#unit">Unit Test</a></li>
+                <li><a class="page-scroll" href="testing.html#integration">Integration Test</a></li>
+                <li><a class="page-scroll" href="testing.html#user">User Acceptance Testing</a></li>
+              </ul>
+            </li>
 
-            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a></li>
+            <li class="dropdown"><a href="evaluation.html" class="dropdown-toggle" data-toggle="dropdown">Evaluation</a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll" href="evaluation.html#moscow">MoSCoW List Achievement</a></li>
+                <li><a class="page-scroll" href="evaluation.html#individual">Individual Contribution</a></li>
+                <li><a class="page-scroll" href="evaluation.html#critical">Critical Evaluation</a></li>
+                <li><a class="page-scroll" href="evaluation.html#bug">Bug List</a></li>
+                <li><a class="page-scroll" href="evaluation.html#future">Future Work</a></li>
+              </ul>
+            </li>
 
             <li class="dropdown"><a href="appendices.html" class="dropdown-toggle" data-toggle="dropdown">Appendices</a></li>
-
         </ul>
       </div>
       <!--== /.navbar-collapse ==-->
@@ -457,21 +455,39 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td scope="row">- The algorithm could add subscribers/listeners that have various functionalities when an itch is detected:​
-                            <p>  </p>
-                            <p style="margin-left: 15px;">A robot could assist with the itch when an itch is detected​</p>
-                            
-                            <p style="margin-left: 15px;">The itch data could be sent to a logging database when an itch is detected​</p></td>
+                          <td scope="row">- The algorithm could be working even with head rotation​​</td>
                         </tr>
                         <tr>
                           <td scope="row">- Improvement in light sensitivity issue of face recognition​</td>
                         </tr>
                         <tr>
-                          <td scope="row">- Make an algorithm that can analyse facial movement from a user to detect the presence and approximate location of an itch​</td>
+                          <td scope="row">- The test platform should have the option to show facial landmarks to improve testing​​</td>
                         </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="margin-top: 40px;">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover mb-0 text-md-nowrap">
+                      <thead>
                         <tr>
-                          <td scope="row">- The algorithm must be calibratable to best adapt to different face​</td>
+                          <th>Wish have</th>
                         </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">- The algorithm could add subscribers/listeners that have various functionalities when an itch is detected:​
+                            <p>  </p>
+                            <p style="margin-left: 15px;">A robot could assist with the itch when an itch is detected​</p>
+                            
+                            <p style="margin-left: 15px;">The itch data could be sent to a logging database when an itch is detected​</p></td>
+                          </tr>
+
                       </tbody>
                     </table>
                   </div>
@@ -543,7 +559,7 @@
           </div>
           <div class="row">
             <div class="col-md-12" style="margin-top:30px;" >
-              <div class="copy-right text-center">&#169; 2023 All rights reserved</div>
+              <div class="copy-right text-center"><a href="license.html"><p class="white-color">&#169; 2023 All rights reserved</p></a></div>
             </div>
           </div>
         </div>
